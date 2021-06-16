@@ -22,7 +22,7 @@ function Card({ title, subTitle, image }) {
 
 const styles = StyleSheet.create({
   siteContainer: {
-    backgroundColor: "lightgray"
+    backgroundColor: "#24AE80"
   },
   card: {
     borderRadius: 15,
@@ -30,7 +30,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     marginTop: 30,
     marginHorizontal: 20,
-    overflow: "hidden"
+    overflow: "hidden",
+    width: 300,
+    height: 350
   },
   image: {
     width: "100%",

@@ -7,8 +7,7 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 import AppButton from "./app/components/AppButton";
 import Card from "./app/components/Card";
 import StudentWelcomeScreen from "./app/screens/StudentWelcomeScreen";
-import ListingScreen from "./app/screens/ListingScreen";
 
 export default function App() {
-  return <ListingScreen />;
+  return <StudentWelcomeScreen />;
 }

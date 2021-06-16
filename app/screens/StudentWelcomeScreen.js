@@ -1,15 +1,18 @@
 import React from "react";
-import { View, StyleSheet, Image, Text } from "react-native";
+import { StyleSheet } from "react-native";
 
-import Apptext from "../components/AppText";
 import Screen from "../components/Screen";
 import ImageView from "../components/ImageView";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function StudentWelcomeScreen(props) {
   return (
-    <Screen>
+    <>
+      <Header />
       <ImageView />
-    </Screen>
+      <Footer />
+    </>
   );
 }
 

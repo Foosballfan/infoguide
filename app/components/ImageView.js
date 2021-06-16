@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, FlatList, Text } from "react-native";
+import { View, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 
 import Card from "./Card";
 import Screen from "./Screen";
@@ -9,7 +9,7 @@ const listings = [
     id: 1,
     title: "Henting av Bøker og PC",
     subTitle:
-      " Nå kan du hente bøker og pc på biblioteket, sjekk timeplaf for når din klasse.. ",
+      " Nå kan du hente bøker og pc på biblioteket, sjekk timeplaf for når din klasse. ",
     image: require("../assets/books-computer.jpg")
   },
   {

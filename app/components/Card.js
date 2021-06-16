@@ -24,7 +24,7 @@ function Card({ title, subTitle, image }) {
 
 const styles = StyleSheet.create({
   siteContainer: {
-    backgroundColor: "#24AE80"
+    backgroundColor: colors.secondary
   },
   card: {
     borderRadius: 15,

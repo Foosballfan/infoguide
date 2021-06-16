@@ -1,12 +1,10 @@
 import React from "react";
 import { View, StyleSheet, ImageBackground, Image, Text } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import colors from "../config/colors";
-import Apptext from "../components/AppText";
 import AppButton from "../components/AppButton";
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       blurRadius={0}
@@ -18,11 +16,14 @@ function WelcomeScreen(props) {
         <Text style={styles.tagline}>Kvadraturens Guide</Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <AppButton title="Ansatte" onPress={() => console.log("Tapped")} />
         <AppButton
           title="Elever"
           color="secondary"
-          onPress={() => console.log("Tapped")}
+          onPress={() => navigation.navigate("StudentWelcomeScreen")}
+        />
+        <AppButton
+          title="Ansatte"
+          onPress={() => navigation.navigate("TeacherWelcomeScreen")}
         />
       </View>
     </ImageBackground>
@@ -37,7 +38,8 @@ const styles = StyleSheet.create({
   },
   buttonsContainer: {
     padding: 20,
-    width: "100%"
+    width: "100%",
+    marginBottom: 20
   },
   logo: {
     width: 170,

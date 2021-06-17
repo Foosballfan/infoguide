@@ -9,7 +9,7 @@ function WelcomeScreen({ navigation }) {
     <ImageBackground
       blurRadius={0}
       style={styles.background}
-      source={require("../assets/hands.jpg")}
+      source={require("../assets/monster.png")}
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo2.png")} />

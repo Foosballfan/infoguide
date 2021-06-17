@@ -3,6 +3,7 @@ import { View, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 
 import Card from "./Card";
 import Screen from "./Screen";
+import AppText from "../components/AppText";
 
 const listings = [
   {
@@ -29,12 +30,27 @@ const listings = [
     title: "Trenger du noen å snakke med?",
     subTitle: " Det kan være skummelt med skolestart...",
     image: require("../assets/thea.jpg")
+  },
+  {
+    id: 5,
+    title: "Finn frem på skolen",
+    subTitle: " Det kan være skummelt med skolestart...",
+    image: require("../assets/kvadda.png")
+  },
+  {
+    id: 6,
+    title: "Aktiviteter i lunsjen",
+    subTitle: " Det kan være skummelt med skolestart...",
+    image: require("../assets/kvadda.png")
   }
 ];
 
-function ImageView(props) {
+function ImageView({ navigation }) {
   return (
     <Screen>
+      <View style={styles.container}>
+        <AppText style={styles.description}>Siste nytt ⚡️</AppText>
+      </View>
       <FlatList
         horizontal
         data={listings}
@@ -49,6 +65,7 @@ function ImageView(props) {
             title={item.title}
             subTitle={item.subTitle}
             image={item.image}
+            onPress={() => navigation.navigate("", item)}
           />
         )}
       />
@@ -57,7 +74,15 @@ function ImageView(props) {
 }
 
 const styles = StyleSheet.create({
-  container: {}
+  container: {
+    margin: 5
+  },
+  description: {
+    fontSize: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    marginHorizontal: 10
+  }
 });
 
 export default ImageView;

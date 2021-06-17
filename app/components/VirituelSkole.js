@@ -1,14 +1,19 @@
 import React from "react";
 import { View, StyleSheet, Image, Button } from "react-native";
+import * as Linking from "expo-linking";
 
 import Apptext from "./AppText";
 import AppButton from "./AppButton";
 import colors from "../config/colors";
+import AppText from "./AppText";
 
 function VirituelSkole(props) {
   return (
     <View style={styles.container}>
-      <Apptext style={styles.welcome}>Velkommen til Kvadraturen Vgs</Apptext>
+      <AppText style={styles.welcome}>Velkommen til Kvadraturen Vgs</AppText>
+      <AppText style={styles.description}>
+        Her finner du alt du trenger å vite om oppstarten på skoleåret ditt.{" "}
+      </AppText>
       <Button
         title="Virtuell digital åpen skole "
         style={styles.button}
@@ -34,6 +39,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     margin: 20,
     fontSize: 20
+  },
+  description: {
+    margin: 10,
+    fontSize: 18
   },
   button: {
     fontSize: 10,

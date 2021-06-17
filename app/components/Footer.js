@@ -6,6 +6,7 @@ import * as Linking from "expo-linking";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Apptext from "../components/AppText";
 import colors from "../config/colors";
+import AppText from "../components/AppText";
 
 function Footer(props) {
   return (
@@ -19,7 +20,7 @@ function Footer(props) {
         >
           <MaterialCommunityIcons
             name="facebook"
-            size={35}
+            size={40}
             color="white"
             style={{ margin: 10 }}
           />
@@ -32,7 +33,7 @@ function Footer(props) {
         >
           <MaterialCommunityIcons
             name="instagram"
-            size={35}
+            size={40}
             color="white"
             style={{ margin: 10 }}
           />
@@ -47,7 +48,7 @@ function Footer(props) {
         >
           <MaterialCommunityIcons
             name="youtube"
-            size={35}
+            size={40}
             color="white"
             style={{ margin: 10 }}
           />
@@ -60,7 +61,7 @@ function Footer(props) {
         >
           <MaterialCommunityIcons
             name="home"
-            size={35}
+            size={40}
             color="white"
             style={{ margin: 10 }}
           />
@@ -71,13 +72,16 @@ function Footer(props) {
       <Apptext style={styles.undertext}>
         Utviklingsredaktør: Thea Gitmark Ugland
       </Apptext>
+      <AppText style={styles.undertext}>
+        Utviklet for: Kvadraturen Skolesenter
+      </AppText>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "coral",
+    backgroundColor: colors.secondary,
     width: "100%",
     height: 200,
     justifyContent: "center",
@@ -96,7 +100,7 @@ const styles = StyleSheet.create({
   },
   undertext: {
     color: colors.white,
-    fontSize: 15
+    fontSize: 11
   }
 });
 

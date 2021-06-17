@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, ScrollView } from "react-native";
 
+import colors from "../config/colors";
 import Screen from "../components/Screen";
 import ImageView from "../components/ImageView";
 import Header from "../components/Header";
@@ -10,7 +11,7 @@ import VirituelSkole from "../components/VirituelSkole";
 function StudentWelcomeScreen(props) {
   return (
     <>
-      <ScrollView>
+      <ScrollView style={styles.container}>
         <VirituelSkole />
         <ImageView />
         <Footer />
@@ -21,7 +22,7 @@ function StudentWelcomeScreen(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "lightblue"
+    backgroundColor: colors.secondaryLight
   }
 });
 

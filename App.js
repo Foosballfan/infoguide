@@ -15,11 +15,13 @@ import StudentWelcomeScreen from "./app/screens/StudentWelcomeScreen";
 import TeacherWelcomeScreen from "./app/screens/TeacherWelcomeScreen";
 import Header from "./app/components/Header";
 import AuthNavigator from "./app/navigation/AuthNavigator";
+import navigationTheme from "./app/navigation/navigationTheme";
+import AppNavigator from "./app/navigation/AppNavigator";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <AuthNavigator />
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
     </NavigationContainer>
   );
 }

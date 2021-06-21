@@ -40,8 +40,9 @@ const listings = [
   {
     id: 6,
     title: "Aktiviteter i lunsjen",
-    subTitle: " Det kan være skummelt med skolestart...",
-    image: require("../assets/kvadda.png")
+    subTitle:
+      " Det vil være gøye aktviteter i lunsjen fremvoer, se oversikt over hva som skjer",
+    image: require("../assets/games.jpg")
   }
 ];
 
@@ -65,7 +66,7 @@ function ImageView({ navigation }) {
             title={item.title}
             subTitle={item.subTitle}
             image={item.image}
-            onPress={() => navigation.navigate("", item)}
+            onPress={() => navigation.navigate("HenteBokScreen")}
           />
         )}
       />

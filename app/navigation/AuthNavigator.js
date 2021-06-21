@@ -6,6 +6,8 @@ import WelcomeScreen from "../screens/WelcomeScreen";
 import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
 import TeacherWelcomeScreen from "../screens/TeacherWelcomeScreen";
 import colors from "../config/colors";
+import AppNavigator from "./AppNavigator";
+import HenteBokScreen from "../screens/HenteBokScreen";
 
 const Stack = createStackNavigator();
 
@@ -21,7 +23,7 @@ const AuthNavigator = () => (
     />
     <Stack.Screen
       name="StudentWelcomeScreen"
-      component={StudentWelcomeScreen}
+      component={AppNavigator}
       options={{
         title: "ELEVER",
         headerStyle: {
@@ -35,9 +37,10 @@ const AuthNavigator = () => (
         headerTintColor: colors.white
       }}
     />
+
     <Stack.Screen
       name="TeacherWelcomeScreen"
-      component={TeacherWelcomeScreen}
+      component={AppNavigator}
       options={{
         title: "ANSATTE",
         headerStyle: {
@@ -49,6 +52,14 @@ const AuthNavigator = () => (
         },
 
         headerTintColor: colors.white
+      }}
+    />
+
+    <Stack.Screen
+      name="HenteBokScreen"
+      component={HenteBokScreen}
+      options={{
+        title: "Tilbake"
       }}
     />
   </Stack.Navigator>

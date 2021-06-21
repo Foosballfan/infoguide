@@ -2,8 +2,12 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
+import { createStackNavigator } from "@react-navigation/stack";
 import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
 import AuthNavigator from "../navigation/AuthNavigator";
+import WelcomeScreen from "../screens/WelcomeScreen";
+import colors from "../config/colors";
+import HenteBokScreen from "../screens/HenteBokScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -11,7 +15,7 @@ const AppNavigator = () => (
   <Tab.Navigator>
     <Tab.Screen
       name="Hjem"
-      component={AuthNavigator}
+      component={StudentWelcomeScreen}
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="home" color={color} size={size} />

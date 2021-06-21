@@ -7,6 +7,7 @@ import ImageView from "../components/ImageView";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import VirituelSkole from "../components/VirituelSkole";
+import AppNavigator from "../navigation/AppNavigator";
 
 function StudentWelcomeScreen(props) {
   return (

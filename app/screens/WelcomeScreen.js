@@ -9,7 +9,7 @@ function WelcomeScreen({ navigation }) {
     <ImageBackground
       blurRadius={0}
       style={styles.background}
-      source={require("../assets/monster.png")}
+      source={require("../assets/front.png")}
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo2.png")} />
@@ -56,9 +56,12 @@ const styles = StyleSheet.create({
   },
   tagline: {
     color: colors.black,
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: "600",
-    paddingVertical: 20
+    paddingVertical: 20,
+    fontFamily: "Helvetica",
+    textTransform: "uppercase",
+    letterSpacing: 2
   }
 });
 

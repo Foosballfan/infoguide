@@ -11,17 +11,22 @@ import HenteBokScreen from "../screens/HenteBokScreen";
 import OmSkolen from "../screens/OmSkolen";
 import InfoScreen from "../screens/InfoScreen";
 import KontaktScreen from "../screens/KontaktScreen";
+import TeacherWelcomeScreen from "../screens/TeacherWelcomeScreen";
 
 const Tab = createBottomTabNavigator();
 
-const AppNavigator = () => (
+const AppNavTeacher = () => (
   <Tab.Navigator>
     <Tab.Screen
       name="Hjem"
-      component={StudentWelcomeScreen}
+      component={TeacherWelcomeScreen}
       options={{
-        tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="home" color={color} size={size} />
+        tabBarIcon: ({ size }) => (
+          <MaterialCommunityIcons
+            name="home"
+            color={colors.primary}
+            size={size}
+          />
         )
       }}
     />
@@ -59,4 +64,4 @@ const AppNavigator = () => (
   </Tab.Navigator>
 );
 
-export default AppNavigator;
+export default AppNavTeacher;

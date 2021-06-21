@@ -1,23 +1,26 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
 
-import Screen from "../components/Screen";
 import ImageView from "../components/ImageView";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import FooterTeacher from "../components/FooterTeacher";
+import VirituelSkole from "../components/VirituelSkole";
+import colors from "../config/colors";
 
 function StudentWelcomeScreen(props) {
   return (
     <>
-      <ImageView />
-      <Footer />
+      <ScrollView style={styles.container}>
+        <VirituelSkole />
+        <ImageView />
+        <FooterTeacher />
+      </ScrollView>
     </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "lightblue"
+    backgroundColor: colors.primaryLight
   }
 });
 

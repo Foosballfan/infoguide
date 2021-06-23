@@ -15,7 +15,7 @@ function OmSkolen({ navigation }) {
           <AppButton
             color="secondary"
             title="Utdannings Tilbud"
-            onPress={() => navigation.navigate("TeacherWelcomeScreen")}
+            onPress={() => navigation.navigate("")}
           />
           <Text style={styles.text}>
             Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -21,12 +21,8 @@ const AppNavTeacher = () => (
       name="Hjem"
       component={TeacherWelcomeScreen}
       options={{
-        tabBarIcon: ({ size }) => (
-          <MaterialCommunityIcons
-            name="home"
-            color={colors.primary}
-            size={size}
-          />
+        tabBarIcon: ({ size, color }) => (
+          <MaterialCommunityIcons name="home" color={color} size={size} />
         )
       }}
     />

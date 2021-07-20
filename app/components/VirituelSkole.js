@@ -11,8 +11,17 @@ function VirituelSkole(props) {
   return (
     <View style={styles.container}>
       <AppText style={styles.welcome}>Velkommen til Kvadraturen Vgs</AppText>
-      <AppText style={styles.description}>
-        Her finner du alt du trenger å vite om oppstarten på skoleåret ditt.{" "}
+
+      <AppText style={styles.festival}>
+        🎉 Vi kickstarter skoleåret med festival! Her finner du all
+        informasjonen du trenger å vite om den store festen i Bendiksbukta.
+      </AppText>
+      <Image
+        style={styles.logo}
+        source={require("../assets/oppstartsfestivalen.png")}
+      />
+      <AppText style={styles.festival}>
+        👋 Bli kjent på skolen via vår virutuelle digitale skole.
       </AppText>
       <Button
         title="Virtuell digital åpen skole "
@@ -57,6 +66,16 @@ const styles = StyleSheet.create({
     height: 200,
     marginBottom: 10,
     marginTop: 10
+  },
+  festival: {
+    margin: 5,
+    marginBottom: 0,
+    fontWeight: "500"
+  },
+  logo: {
+    width: "100%",
+    height: 170,
+    marginBottom: 10
   }
 });
 

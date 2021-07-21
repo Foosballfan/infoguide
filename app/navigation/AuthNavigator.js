@@ -4,11 +4,12 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import WelcomeScreen from "../screens/WelcomeScreen";
 import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
-import TeacherWelcomeScreen from "../screens/TeacherWelcomeScreen";
+import TeacherWelcomeScreen from "../screens/TeacherwelcomeScreen";
 import colors from "../config/colors";
 import AppNavigator from "./AppNavigator";
 import HenteBokScreen from "../screens/HenteBokScreen";
 import AppNavTeacher from "../navigation/AppNavTeacher";
+import Festival from "../screens/Festival";
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,7 @@ const AuthNavigator = () => (
       name="StudentWelcomeScreen"
       component={AppNavigator}
       options={{
+        headerShown: true,
         title: "ELEVER",
         headerStyle: {
           backgroundColor: colors.secondary
@@ -46,6 +48,22 @@ const AuthNavigator = () => (
         title: "ANSATTE",
         headerStyle: {
           backgroundColor: colors.primary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="Festival"
+      component={Festival}
+      options={{
+        title: "FESTIVAL",
+        headerStyle: {
+          backgroundColor: colors.darkBlue
         },
         headerTitleStyle: {
           fontWeight: "bold",

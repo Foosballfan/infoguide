@@ -35,7 +35,7 @@ const listings = [
     id: 5,
     title: "Trenger du noen å snakke med?",
     subTitle: " Det kan være skummelt med skolestart...",
-    image: require("../assets/thea.jpg")
+    image: require("../assets/miljoteam.jpg")
   },
   {
     id: 6,
@@ -72,7 +72,7 @@ function ImageView({ navigation }) {
             title={item.title}
             subTitle={item.subTitle}
             image={item.image}
-            onPress={() => navigation.navigate("HenteBokScreen")}
+            onPress={() => navigation.navigate("")}
           />
         )}
       />

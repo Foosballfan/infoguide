@@ -12,6 +12,8 @@ import OmSkolen from "../screens/OmSkolen";
 import InfoScreen from "../screens/InfoScreen";
 import KontaktScreen from "../screens/KontaktScreen";
 
+import SchoolNavigation from "../navigation/SchoolNavigation";
+
 const Tab = createBottomTabNavigator();
 
 const AppNavigator = () => (
@@ -27,7 +29,7 @@ const AppNavigator = () => (
     />
     <Tab.Screen
       name="Om Skolen"
-      component={OmSkolen}
+      component={SchoolNavigation}
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="school" color={color} size={size} />

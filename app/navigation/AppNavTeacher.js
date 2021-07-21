@@ -2,16 +2,10 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import { createStackNavigator } from "@react-navigation/stack";
-import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
-import AuthNavigator from "../navigation/AuthNavigator";
-import WelcomeScreen from "../screens/WelcomeScreen";
-import colors from "../config/colors";
-import HenteBokScreen from "../screens/HenteBokScreen";
 import OmSkolen from "../screens/OmSkolen";
 import InfoScreen from "../screens/InfoScreen";
 import KontaktScreen from "../screens/KontaktScreen";
-import TeacherWelcomeScreen from "../screens/TeacherWelcomeScreen";
+import TeacherWelcomeScreen from "../screens/TeacherwelcomeScreen";
 
 const Tab = createBottomTabNavigator();
 

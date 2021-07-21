@@ -1,9 +1,11 @@
 import React from "react";
 import { View, StyleSheet, Text, ScrollView, Image } from "react-native";
+import { WebView } from "react-native-webview";
+
 import AppButton from "../components/AppButton";
 import colors from "../config/colors";
 import Footer from "../components/Footer";
-import HenteBokScreen from "../screens/HenteBokScreen";
+import YouTubeExample from "../components/WebView";
 
 function OmSkolen({ navigation }) {
   return (

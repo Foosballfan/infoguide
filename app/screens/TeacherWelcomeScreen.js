@@ -1,16 +1,16 @@
 import React from "react";
-import { StyleSheet, ScrollView } from "react-native";
+import { StyleSheet, ScrollView, Text } from "react-native";
 
 import ImageView from "../components/ImageView";
 import FooterTeacher from "../components/FooterTeacher";
-import VirituelSkole from "../components/VirituelSkole";
+
 import colors from "../config/colors";
 
-function StudentWelcomeScreen(props) {
+function TeacherwelcomeScreen(props) {
   return (
     <>
+      <Text>hei</Text>
       <ScrollView style={styles.container}>
-        <VirituelSkole />
         <ImageView />
         <FooterTeacher />
       </ScrollView>
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default StudentWelcomeScreen;
+export default TeacherwelcomeScreen;

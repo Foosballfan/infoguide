@@ -4,13 +4,6 @@ import { View, StyleSheet, Text } from "react-native";
 import colors from "../config/colors";
 import AppText from "../components/AppText";
 
-const images = [
-  { id: 1, uri: require("../assets/thea.jpg") },
-  { id: 2, uri: require("../assets/thea.jpg") },
-  { id: 3, uri: require("../assets/thea.jpg") },
-  { id: 4, uri: require("../assets/thea.jpg") }
-];
-
 function Header(props) {
   return (
     <View style={styles.container}>

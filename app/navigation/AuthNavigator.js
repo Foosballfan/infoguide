@@ -24,10 +24,10 @@ const AuthNavigator = () => (
       }}
     />
     <Stack.Screen
-      name="StudentWelcomeScreen"
+      name="HomeNavigator"
       component={AppNavigator}
       options={{
-        headerShown: true,
+        headerShown: false,
         title: "ELEVER",
         headerStyle: {
           backgroundColor: colors.secondary
@@ -41,22 +41,6 @@ const AuthNavigator = () => (
       }}
     />
 
-    <Stack.Screen
-      name="TeacherWelcomeScreen"
-      component={AppNavTeacher}
-      options={{
-        title: "ANSATTE",
-        headerStyle: {
-          backgroundColor: colors.primary
-        },
-        headerTitleStyle: {
-          fontWeight: "bold",
-          letterSpacing: 2
-        },
-
-        headerTintColor: colors.white
-      }}
-    />
     <Stack.Screen
       name="Festival"
       component={Festival}

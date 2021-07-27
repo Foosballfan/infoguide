@@ -9,7 +9,7 @@ import colors from "../config/colors";
 function TeacherwelcomeScreen(props) {
   return (
     <>
-      <Text>hei</Text>
+      <Text>hei på deg </Text>
       <ScrollView style={styles.container}>
         <ImageView />
         <FooterTeacher />

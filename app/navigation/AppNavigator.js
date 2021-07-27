@@ -11,6 +11,7 @@ import HenteBokScreen from "../screens/HenteBokScreen";
 import OmSkolen from "../screens/OmSkolen";
 import InfoScreen from "../screens/InfoScreen";
 import KontaktScreen from "../screens/KontaktScreen";
+import HomeNavigator from "../navigation/HomeNavigator";
 
 import SchoolNavigation from "../navigation/SchoolNavigation";
 

@@ -19,7 +19,7 @@ function WelcomeScreen({ navigation }) {
         <AppButton
           title="Elever"
           color="secondary"
-          onPress={() => navigation.navigate("StudentWelcomeScreen")}
+          onPress={() => navigation.navigate("HomeNavigator")}
         />
         <AppButton
           title="Ansatte"

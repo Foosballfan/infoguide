@@ -38,7 +38,46 @@ function Festival(props) {
               <AppText style={styles.descText}> Hvor</AppText>
               <AppText style={styles.infoText}>Beniksbukta (kart)</AppText>
               <AppText style={styles.descText}> Sponsorer</AppText>
-              <AppText style={styles.infoText}>Kuholmen cash</AppText>
+              <View style={styles.spons}>
+                <Image
+                  style={styles.image}
+                  source={require("../assets/norgesenergi.png")}
+                />
+                <Image
+                  style={styles.image}
+                  source={require("../assets/bilfag.png")}
+                />
+              </View>
+              <View style={styles.spons}>
+                <Image
+                  style={styles.image}
+                  source={require("../assets/maritim.png")}
+                />
+                <Image
+                  style={styles.image}
+                  source={require("../assets/Fagopplearingsor.jpeg")}
+                />
+              </View>
+              <View style={styles.spons}>
+                <Image
+                  style={styles.image}
+                  source={require("../assets/otek.png")}
+                />
+                <Image
+                  style={styles.image}
+                  source={require("../assets/opplaeringskontoret.jpg")}
+                />
+                <View style={styles.spons}>
+                  <Image
+                    style={styles.image}
+                    source={require("../assets/maritim.png")}
+                  />
+                  <Image
+                    style={styles.image}
+                    source={require("../assets/Fagopplearingsor.jpeg")}
+                  />
+                </View>
+              </View>
             </View>
           </View>
         </Screen>
@@ -63,6 +102,28 @@ const styles = StyleSheet.create({
   infoText: {
     marginHorizontal: 10,
     fontSize: 17
+  },
+  spons: {
+    position: "relative",
+    flexDirection: "row",
+    margin: 8,
+    padding: 15
+  },
+
+  image: {
+    margin: 2,
+    width: "50%",
+    height: 60
+  },
+  image2: {
+    margin: 2,
+    width: "50%",
+    height: 27
+  },
+  image3: {
+    margin: 2,
+    width: "50%",
+    height: 27
   }
 });
 

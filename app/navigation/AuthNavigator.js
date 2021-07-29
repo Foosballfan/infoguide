@@ -10,6 +10,7 @@ import AppNavigator from "./AppNavigator";
 import HenteBokScreen from "../screens/HenteBokScreen";
 import AppNavTeacher from "../navigation/AppNavTeacher";
 import Festival from "../screens/Festival";
+import StudentTimeline from "../screens/StudentTimeline";
 
 const Stack = createStackNavigator();
 
@@ -27,7 +28,7 @@ const AuthNavigator = () => (
       name="HomeNavigator"
       component={AppNavigator}
       options={{
-        headerShown: false,
+        headerShown: true,
         title: "ELEVER",
         headerStyle: {
           backgroundColor: colors.secondary
@@ -46,6 +47,22 @@ const AuthNavigator = () => (
       component={Festival}
       options={{
         title: "FESTIVAL",
+        headerStyle: {
+          backgroundColor: colors.darkBlue
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="StudentTimeline"
+      component={StudentTimeline}
+      options={{
+        title: "Årshjulet",
         headerStyle: {
           backgroundColor: colors.darkBlue
         },

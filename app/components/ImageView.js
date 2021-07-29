@@ -72,7 +72,7 @@ function ImageView({ navigation }) {
             title={item.title}
             subTitle={item.subTitle}
             image={item.image}
-            onPress={() => navigation.navigate("")}
+            onPress={() => navigation.navigate("StudentTimeline")}
           />
         )}
       />

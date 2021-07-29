@@ -7,6 +7,7 @@ import AuthNavigator from "./app/navigation/AuthNavigator";
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
 import StudentWelcomeScreen from "./app/screens/StudentWelcomeScreen";
+import StudentTimeline from "./app/screens/StudentTimeline";
 
 export default function App() {
   return (

@@ -3,6 +3,7 @@ import { View, StyleSheet } from "react-native";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import OmSkolen from "../screens/OmSkolen";
+import colors from "../config/colors";
 
 const Stack = createStackNavigator();
 
@@ -13,7 +14,16 @@ const SchoolNavigation = () => (
       component={OmSkolen}
       options={{
         headerShown: true,
-        title: "OM SKOLEN"
+        title: "OM SKOLEN",
+        headerLeft: null,
+        headerStyle: {
+          backgroundColor: colors.secondary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+        headerTintColor: colors.white
       }}
     />
   </Stack.Navigator>

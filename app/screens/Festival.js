@@ -106,24 +106,16 @@ const styles = StyleSheet.create({
   spons: {
     position: "relative",
     flexDirection: "row",
-    margin: 8,
-    padding: 15
+    margin: 5,
+    padding: 0
   },
 
   image: {
-    margin: 2,
-    width: "50%",
-    height: 60
-  },
-  image2: {
-    margin: 2,
-    width: "50%",
-    height: 27
-  },
-  image3: {
-    margin: 2,
-    width: "50%",
-    height: 27
+    flex: 1,
+    width: "100%",
+    height: 70,
+    margin: 5,
+    resizeMode: "contain"
   }
 });
 

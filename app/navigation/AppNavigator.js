@@ -4,11 +4,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
-import AuthNavigator from "../navigation/AuthNavigator";
-import WelcomeScreen from "../screens/WelcomeScreen";
-import colors from "../config/colors";
-import HenteBokScreen from "../screens/HenteBokScreen";
-import OmSkolen from "../screens/OmSkolen";
+
 import InfoScreen from "../screens/InfoScreen";
 import KontaktScreen from "../screens/KontaktScreen";
 import HomeNavigator from "../navigation/HomeNavigator";
@@ -18,10 +14,20 @@ import SchoolNavigation from "../navigation/SchoolNavigation";
 const Tab = createBottomTabNavigator();
 
 const AppNavigator = () => (
-  <Tab.Navigator>
+  <Tab.Navigator
+    tabBarOptions={{
+      style: {
+        backgroundColor: "rgba(225, 255, 255, 0.95)",
+        position: "absolute",
+        left: 0,
+        bottom: 0,
+        right: 0
+      }
+    }}
+  >
     <Tab.Screen
       name="Hjem"
-      component={StudentWelcomeScreen}
+      component={HomeNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="home" color={color} size={size} />

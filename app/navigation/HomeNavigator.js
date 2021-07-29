@@ -3,9 +3,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import colors from "../config/colors";
-import AppNavigator from "./AppNavigator";
-import HenteBokScreen from "../screens/HenteBokScreen";
-import StudentWelcomeScreen from "../screens/TeacherwelcomeScreen";
+import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
 import Festival from "../screens/Festival";
 
 const Stack = createStackNavigator();
@@ -17,7 +15,7 @@ const HomeNavigator = () => (
       component={StudentWelcomeScreen}
       options={{
         headerShown: true,
-        title: "ELEVER test",
+        title: "ELEVER",
         headerStyle: {
           backgroundColor: colors.secondary
         },
@@ -25,6 +23,22 @@ const HomeNavigator = () => (
           fontWeight: "bold",
           letterSpacing: 2
         },
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="Festival"
+      component={Festival}
+      options={{
+        title: "FESTIVAL",
+        headerStyle: {
+          backgroundColor: colors.darkBlue
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
         headerTintColor: colors.white
       }}
     />

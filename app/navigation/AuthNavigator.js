@@ -4,7 +4,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import WelcomeScreen from "../screens/WelcomeScreen";
 import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
-import TeacherWelcomeScreen from "../screens/TeacherwelcomeScreen";
 import colors from "../config/colors";
 import AppNavigator from "./AppNavigator";
 import HenteBokScreen from "../screens/HenteBokScreen";
@@ -28,7 +27,7 @@ const AuthNavigator = () => (
       name="HomeNavigator"
       component={AppNavigator}
       options={{
-        headerShown: true,
+        headerShown: false,
         title: "ELEVER",
         headerStyle: {
           backgroundColor: colors.secondary
@@ -42,22 +41,6 @@ const AuthNavigator = () => (
       }}
     />
 
-    <Stack.Screen
-      name="Festival"
-      component={Festival}
-      options={{
-        title: "FESTIVAL",
-        headerStyle: {
-          backgroundColor: colors.darkBlue
-        },
-        headerTitleStyle: {
-          fontWeight: "bold",
-          letterSpacing: 2
-        },
-
-        headerTintColor: colors.white
-      }}
-    />
     <Stack.Screen
       name="StudentTimeline"
       component={StudentTimeline}

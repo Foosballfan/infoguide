@@ -5,7 +5,6 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import OmSkolen from "../screens/OmSkolen";
 import InfoScreen from "../screens/InfoScreen";
 import KontaktScreen from "../screens/KontaktScreen";
-import TeacherWelcomeScreen from "../screens/TeacherwelcomeScreen";
 
 const Tab = createBottomTabNavigator();
 

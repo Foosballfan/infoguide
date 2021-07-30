@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Platform, StyleSheet, View, Text, Button } from "react-native";
 
 import AppText from "./AppText";
-import AppButton from "./AppButton";
+import InfoButton from "./InfoButton";
 
 export default class Servicetorget extends Component {
   constructor() {
@@ -24,7 +24,7 @@ export default class Servicetorget extends Component {
     return (
       <>
         <View style={styles.container}>
-          <AppButton
+          <InfoButton
             color="secondary"
             title="Servicetorget"
             onPress={this.componentHideAndShow}

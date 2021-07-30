@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Platform, StyleSheet, View, Text, Button } from "react-native";
 
 import AppText from "./AppText";
-import AppButton from "./AppButton";
+import InfoButton from "./InfoButton";
 
 export default class Studieverksted extends Component {
   constructor() {
@@ -16,15 +16,11 @@ export default class Studieverksted extends Component {
     this.setState(previousState => ({ content: !previousState.content }));
   };
 
-  componentHideAndShowtwo = () => {
-    this.setState(previousState => ({ content: !previousState.content }));
-  };
-
   render() {
     return (
       <>
         <View style={styles.container}>
-          <AppButton
+          <InfoButton
             color="secondary"
             title="Studieverksted"
             onPress={this.componentHideAndShow}

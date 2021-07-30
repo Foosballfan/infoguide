@@ -15,8 +15,10 @@ function OmSkolen({ navigation }) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <View style={styles.container}>
           <Text style={styles.headline}>Klikk å les om skolen</Text>
+
           <Servicetorget />
           <Studieverksted />
+
           <Text style={styles.text}>Sjekk ut skolens utdanningstilbud </Text>
           <AppButton
             color="secondary"

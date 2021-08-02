@@ -16,10 +16,6 @@ export default class Servicetorget extends Component {
     this.setState(previousState => ({ content: !previousState.content }));
   };
 
-  componentHideAndShowtwo = () => {
-    this.setState(previousState => ({ content: !previousState.content }));
-  };
-
   render() {
     return (
       <>

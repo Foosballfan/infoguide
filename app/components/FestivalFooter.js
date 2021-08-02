@@ -83,13 +83,14 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#259497",
     width: "100%",
-    height: 200,
-    justifyContent: "center",
+    height: 300,
+    justifyContent: "flex-start",
     alignItems: "center"
   },
   text: {
     color: colors.white,
     fontWeight: "bold",
+    marginTop: 30,
     letterSpacing: 3,
     textTransform: "uppercase",
     fontSize: 15

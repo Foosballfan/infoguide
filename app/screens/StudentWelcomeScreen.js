@@ -15,31 +15,20 @@ import Footer from "../components/Footer";
 import colors from "../config/colors";
 import AppText from "../components/AppText";
 import ImageButton from "../components/ImageButton";
+import VirituellButton from "../components/VirituellButton";
 
 function StudentWelcomeScreen({ navigation }) {
   return (
     <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
       <View style={styles.container}>
         <AppText style={styles.welcome}>Velkommen til Kvadraturen VGS</AppText>
+        <Image style={styles.Line} source={require("../assets/LineThin.png")} />
 
         <View style={styles.festival}>
           <ImageButton onPress={() => navigation.navigate("Festival")} />
         </View>
 
-        <Image
-          style={styles.image}
-          source={require("../assets/virituelskole.png")}
-        />
-        <Button
-          title="Virtuell digital åpen skole "
-          style={styles.button}
-          onPress={() => {
-            Linking.openURL("http://193.213.19.37/kva/");
-          }}
-        />
-        <AppText style={styles.festival}>
-          👋 Bli kjent på skolen via vår virutuelle digitale skole.
-        </AppText>
+        <VirituellButton />
       </View>
       <ImageView />
 
@@ -87,6 +76,12 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 165,
     marginBottom: 10
+  },
+  Line: {
+    flex: 1,
+    width: 200,
+    height: 60,
+    resizeMode: "contain"
   }
 });
 

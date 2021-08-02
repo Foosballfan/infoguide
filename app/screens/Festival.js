@@ -6,11 +6,12 @@ import FestivalCover from "../components/FestivalCover";
 import Artists from "../components/Artists";
 import AppText from "../components/AppText";
 import FestivalFooter from "../components/FestivalFooter";
+import colors from "../config/colors";
 
 function Festival(props) {
   return (
     <>
-      <ScrollView>
+      <ScrollView style={{ backgroundColor: colors.yellow }}>
         <Screen>
           <View style={styles.container}>
             <FestivalCover />
@@ -88,9 +89,7 @@ function Festival(props) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#FFD961"
-  },
+  container: {},
   descText: {
     color: "#C00000",
     textTransform: "uppercase",

@@ -12,7 +12,7 @@ function ImageButton({ onPress, navigation }) {
           source={require("../assets/oppstartsfestivalen.png")}
         />
       </TouchableOpacity>
-      <AppText style={styles.festival}>
+      <AppText>
         🎉 Vi kickstarter skoleåret med festival! Her finner du all
         informasjonen du trenger å vite om den store festen i Bendiksbukta.
       </AppText>

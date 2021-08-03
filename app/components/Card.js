@@ -4,34 +4,59 @@ import {
   StyleSheet,
   Image,
   SafeAreaView,
-  TouchableWithoutFeedback
+  TouchableWithoutFeedback,
+  ScrollView
 } from "react-native";
 
 import colors from "../config/colors";
 import AppText from "../components/AppText";
 
-function Card({ title, subTitle, image, onPress }) {
+function Card({ onPress, navigation }) {
   return (
-    <SafeAreaView>
-      <TouchableWithoutFeedback onPress={onPress}>
-        <View style={styles.siteContainer}>
-          <View style={styles.card}>
-            <Image style={styles.image} source={image} />
-            <View style={styles.detailsContainer}>
-              <AppText style={styles.title}>{title}</AppText>
+    <>
+      <ScrollView horizontal>
+        <View style={styles.container}>
+          <TouchableWithoutFeedback onPress={onPress}>
+            <View style={styles.card}>
+              <Image
+                style={styles.image}
+                source={require("../assets/firstweek.jpg")}
+              />
+
+              <AppText style={styles.title}>
+                Se hva som skjer den første uken
+              </AppText>
               <AppText numberOfLines={3} style={styles.subTitle}>
-                {subTitle}
+                Det er mye som skjer første uken på skolen, se oversikt over din
+                klasse her
               </AppText>
             </View>
-          </View>
+          </TouchableWithoutFeedback>
+          <TouchableWithoutFeedback onPress={onPress}>
+            <View style={styles.card}>
+              <Image
+                style={styles.image}
+                source={require("../assets/games.jpg")}
+              />
+
+              <AppText style={styles.title}>test tittel</AppText>
+              <AppText numberOfLines={3} style={styles.subTitle}>
+                test subtitle
+              </AppText>
+            </View>
+          </TouchableWithoutFeedback>
         </View>
-      </TouchableWithoutFeedback>
-    </SafeAreaView>
+      </ScrollView>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  siteContainer: {},
+  container: {
+    margin: 5,
+
+    flexDirection: "row"
+  },
   card: {
     borderRadius: 15,
     backgroundColor: colors.white,
@@ -50,13 +75,20 @@ const styles = StyleSheet.create({
     padding: 10
   },
   title: {
-    marginBottom: 5,
+    margin: 5,
     fontWeight: "bold",
     fontSize: 18
   },
   subTitle: {
     color: "gray",
-    fontSize: 16
+    fontSize: 16,
+    marginHorizontal: 5
+  },
+  description: {
+    fontSize: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    marginHorizontal: 10
   }
 });
 

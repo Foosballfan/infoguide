@@ -5,11 +5,11 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { createStackNavigator } from "@react-navigation/stack";
 import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
 
-import InfoScreen from "../screens/InfoScreen";
 import KontaktScreen from "../screens/KontaktScreen";
 import HomeNavigator from "../navigation/HomeNavigator";
-
+import InfoNavigator from "../navigation/InfoNavigator";
 import SchoolNavigation from "../navigation/SchoolNavigation";
+import ContactNavigator from "../navigation/ContactNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -45,7 +45,7 @@ const AppNavigator = () => (
     />
     <Tab.Screen
       name="Info"
-      component={InfoScreen}
+      component={InfoNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons
@@ -58,7 +58,7 @@ const AppNavigator = () => (
     />
     <Tab.Screen
       name="Kontakt"
-      component={KontaktScreen}
+      component={ContactNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="account" color={color} size={size} />

@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import colors from "../config/colors";
 import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
 import Festival from "../screens/Festival";
+import StudentTimeline from "../screens/StudentTimeline";
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,22 @@ const HomeNavigator = () => (
       component={Festival}
       options={{
         title: "FESTIVAL",
+        headerStyle: {
+          backgroundColor: colors.darkBlue
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="StudentTimeline"
+      component={StudentTimeline}
+      options={{
+        title: "Første uken",
         headerStyle: {
           backgroundColor: colors.darkBlue
         },

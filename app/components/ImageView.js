@@ -8,43 +8,25 @@ import AppText from "../components/AppText";
 const listings = [
   {
     id: 1,
-    title: "Hva skjer frem til høstferien",
-    subTitle: " Se hva som skjer på skolen frem til høstferien ",
-    image: require("../assets/calendar.png")
+    title: "Hva skjer første uken",
+    subTitle:
+      " Det er mye som skjer første uken på skolen, se oversikt over her ",
+    image: require("../assets/firstweek.jpg")
   },
   {
     id: 2,
-    title: "Henting av Bøker og PC",
-    subTitle:
-      " Nå kan du hente bøker og pc på biblioteket, sjekk timeplaf for når din klasse. ",
-    image: require("../assets/books-computer.jpg")
-  },
-  {
-    id: 3,
-    title: "Tur til Odderøya",
-    subTitle: "Pakk sekken for en hyggelig åpningstur til odderøya.",
-    image: require("../assets/odderoya.jpg")
-  },
-  {
-    id: 4,
-    title: "Fotografering",
-    subTitle: " Det vil foregå fotografering ...",
-    image: require("../assets/fotografering.jpeg")
-  },
-  {
-    id: 5,
     title: "Trenger du noen å snakke med?",
     subTitle: " Det kan være skummelt med skolestart...",
     image: require("../assets/miljoteam.jpg")
   },
   {
-    id: 6,
-    title: "Finn frem på skolen",
-    subTitle: " Det kan være skummelt med skolestart...",
-    image: require("../assets/kvadda.png")
+    id: 3,
+    title: "Se viktige datoer frem til høstferien",
+    subTitle: " Det er mye som skjer den første mnd på skolen, se oversikt her",
+    image: require("../assets/calendar.png")
   },
   {
-    id: 7,
+    id: 4,
     title: "Aktiviteter i lunsjen",
     subTitle:
       " Det vil være gøye aktviteter i lunsjen fremvoer, se oversikt over hva som skjer",
@@ -54,29 +36,24 @@ const listings = [
 
 function ImageView({ navigation }) {
   return (
-    <Screen>
+    <>
       <View style={styles.container}>
         <AppText style={styles.description}>Siste nytt ⚡️</AppText>
       </View>
       <FlatList
         horizontal
-        data={listings}
         keyExtractor={listing => listing.id.toString()}
         renderItem={({ item }) => (
           <Card
-            style={{
-              width: 200,
-              height: "20",
-              flexDirection: "row"
-            }}
-            title={item.title}
-            subTitle={item.subTitle}
-            image={item.image}
-            onPress={() => navigation.navigate("StudentTimeline")}
+            style={styles.Card}
+            title={"hei"}
+            subTitle={"hei"}
+            image={require("../assets/games.jpg")}
+            onPress={() => navigation.navigate("StudentTimeline", item)}
           />
         )}
       />
-    </Screen>
+    </>
   );
 }
 
@@ -89,6 +66,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginHorizontal: 10
+  },
+  Card: {
+    width: 200,
+    height: "20",
+    flexDirection: "row"
   }
 });
 

@@ -1,16 +1,7 @@
 import React from "react";
-import {
-  StyleSheet,
-  ScrollView,
-  View,
-  Image,
-  Button,
-  Text
-} from "react-native";
+import { StyleSheet, ScrollView, View, Image } from "react-native";
 
-import * as Linking from "expo-linking";
-
-import ImageView from "../components/ImageView";
+import Card from "../components/Card";
 import Footer from "../components/Footer";
 import colors from "../config/colors";
 import AppText from "../components/AppText";
@@ -30,7 +21,8 @@ function StudentWelcomeScreen({ navigation }) {
 
         <VirituellButton />
       </View>
-      <ImageView />
+      <AppText style={styles.description2}>Siste nytt ⚡️</AppText>
+      <Card />
 
       <Footer />
     </ScrollView>
@@ -52,6 +44,12 @@ const styles = StyleSheet.create({
   description: {
     margin: 10,
     fontSize: 18
+  },
+  description2: {
+    fontSize: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    marginHorizontal: 10
   },
   button: {
     fontSize: 10,

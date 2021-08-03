@@ -1,38 +1,53 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ScrollView, FlatList } from "react-native";
 import Timeline from "react-native-timeline-flatlist";
+
+import colors from "../config/colors";
 
 export default class Example extends Component {
   constructor() {
     super();
     this.data = [
       {
-        time: "09:00",
-        title: "Archery Training",
-        description:
-          "The Beginner Archery and Beginner Crossbow course does not require you to bring any equipment, since everything you need will be provided for the course. ",
-        circleColor: "#009688",
-        lineColor: "#009688"
+        time: "19.08",
+        title: "🎓 Første skoledag",
+        description: "Første skoledag yay "
       },
       {
-        time: "10:45",
-        title: "Play Badminton",
+        time: "20.08",
+        title: "🎉Oppstartsfestival",
+        description:
+          "Vi kickstarter skoleåret med festival fra kl 12:00 - 15:00 i Bendiksbukta! Du finner all informasjonen du trenger på festivalsiden."
+      },
+      {
+        time: "22.08",
+        title: "⚽️ Aktivitetsdag for vg2 elever på Odderøya",
         description:
           "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net."
       },
-      { time: "12:00", title: "Lunch" },
       {
-        time: "14:00",
-        title: "Watch Soccer",
+        time: "22.08",
+        title: "📚 Bokutlevering alle klasser",
         description:
-          "Team sport played between two teams of eleven players with a spherical ball. ",
-        lineColor: "#009688"
+          "Fra 22 til 25 august kan alle trinn og klasser hente bøker på studieværkstedet"
       },
       {
-        time: "16:30",
-        title: "Go to Fitness center",
-        description: "Look out for the Best Gym & Fitness Centers around me :)",
-        circleColor: "#009688"
+        time: "23.08",
+        title: "⚽️ Aktivitetsdag for vg1 elever på Odderøya",
+        description:
+          "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net."
+      },
+      {
+        time: "24.08",
+        title: "💻 PC utlevering for vg1 elever.",
+        description:
+          "Vg1 elever kan hente PC i Studidevæerkstedet 24 og 25 august. "
+      },
+
+      {
+        time: "22.08",
+        title: "📸 Elevfotografering alle klasser",
+        description: "22 til 25 august skjer det fotografering av elevene"
       }
     ];
   }
@@ -46,12 +61,12 @@ export default class Example extends Component {
           data={this.data}
           separator={true}
           circleSize={20}
-          circleColor="rgb(45,156,219)"
-          lineColor="rgb(45,156,219)"
+          circleColor={colors.primary}
+          lineColor={colors.primary}
           timeContainerStyle={{ minWidth: 52, marginTop: -5 }}
           timeStyle={{
             textAlign: "center",
-            backgroundColor: "#ff9797",
+            backgroundColor: colors.secondary,
             color: "white",
             padding: 5,
             borderRadius: 13,
@@ -71,11 +86,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    paddingTop: 65,
+    paddingTop: 15,
     backgroundColor: "white"
   },
   list: {
     flex: 1,
-    marginTop: 20
+
+    marginBottom: 50
   }
 });

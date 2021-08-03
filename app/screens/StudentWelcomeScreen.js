@@ -1,14 +1,19 @@
 import React from "react";
-import { StyleSheet, ScrollView, View, Image } from "react-native";
+import {
+  StyleSheet,
+  ScrollView,
+  View,
+  Image,
+  TouchableOpacity
+} from "react-native";
 
-import Card from "../components/Card";
 import Footer from "../components/Footer";
 import colors from "../config/colors";
 import AppText from "../components/AppText";
 import ImageButton from "../components/ImageButton";
 import VirituellButton from "../components/VirituellButton";
 
-function StudentWelcomeScreen({ navigation }) {
+function StudentWelcomeScreen({ onPress, navigation }) {
   return (
     <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
       <View style={styles.container}>
@@ -22,8 +27,73 @@ function StudentWelcomeScreen({ navigation }) {
         <VirituellButton />
       </View>
       <AppText style={styles.description2}>Siste nytt ⚡️</AppText>
-      <Card />
+      <ScrollView horizontal>
+        <View style={styles.Cardcontainer}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("StudentTimeline")}
+          >
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/firstweek.jpg")}
+              />
 
+              <AppText style={styles.title}>
+                Se hva som skjer den første uken
+              </AppText>
+              <AppText numberOfLines={3} style={styles.subTitle}>
+                Det er mye som skjer første uken på skolen, se oversikt over din
+                klasse her
+              </AppText>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("MiljoScreen")}>
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/miljoteam.jpg")}
+              />
+
+              <AppText style={styles.title}>
+                Trenger du noen å snakke med?
+              </AppText>
+              <AppText numberOfLines={3} style={styles.subTitle}>
+                På skolen ønsker vi å ta vare på elevene, så vi har mange du kan
+                kontakte hvis du trenger noen å snakke med.
+              </AppText>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onPress}>
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/games.jpg")}
+              />
+
+              <AppText style={styles.title}>Aktiviteter i lunsjen</AppText>
+              <AppText numberOfLines={4} style={styles.subTitle}>
+                Det vil være morsomme aktviteter i lunsjen fremvoer, se oversikt
+                over hva som skjer
+              </AppText>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onPress}>
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/calendar.png")}
+              />
+
+              <AppText style={styles.title}>
+                Se viktige datoer frem til høstferien
+              </AppText>
+              <AppText numberOfLines={3} style={styles.subTitle}>
+                Det er mye som skjer den første tiden på skolen, se oversikt her
+              </AppText>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
       <Footer />
     </ScrollView>
   );
@@ -80,6 +150,38 @@ const styles = StyleSheet.create({
     width: 200,
     height: 60,
     resizeMode: "contain"
+  },
+  Cardcontainer: {
+    margin: 5,
+
+    flexDirection: "row"
+  },
+  card: {
+    borderRadius: 15,
+    backgroundColor: colors.white,
+    marginBottom: 20,
+    marginTop: 10,
+    marginHorizontal: 12,
+    overflow: "hidden",
+    width: 200,
+    height: 280
+  },
+  Cardimage: {
+    width: "100%",
+    height: 140
+  },
+  detailsContainer: {
+    padding: 10
+  },
+  title: {
+    margin: 5,
+    fontWeight: "bold",
+    fontSize: 18
+  },
+  subTitle: {
+    color: "gray",
+    fontSize: 16,
+    marginHorizontal: 5
   }
 });
 

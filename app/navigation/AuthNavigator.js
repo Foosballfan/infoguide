@@ -3,12 +3,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import WelcomeScreen from "../screens/WelcomeScreen";
-import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
 import colors from "../config/colors";
 import AppNavigator from "./AppNavigator";
-import HenteBokScreen from "../screens/HenteBokScreen";
-import AppNavTeacher from "../navigation/AppNavTeacher";
-import Festival from "../screens/Festival";
 import StudentTimeline from "../screens/StudentTimeline";
 
 const Stack = createStackNavigator();

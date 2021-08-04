@@ -5,7 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import colors from "../config/colors";
 import AppNavigator from "./AppNavigator";
-import StudentTimeline from "../screens/StudentTimeline";
+import AppNavTeacher from "./AppNavTeacher";
 
 const Stack = createStackNavigator();
 
@@ -38,10 +38,11 @@ const AuthNavigator = () => (
     />
 
     <Stack.Screen
-      name="StudentTimeline"
-      component={StudentTimeline}
+      name="HomeTeacherNavigator"
+      component={AppNavTeacher}
       options={{
-        title: "Årshjulet",
+        title: "Tilbake",
+        headerShown: false,
         headerStyle: {
           backgroundColor: colors.darkBlue
         },

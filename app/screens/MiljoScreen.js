@@ -5,7 +5,7 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
-  Text
+  SectionList
 } from "react-native";
 
 import * as Linking from "expo-linking";
@@ -13,6 +13,7 @@ import * as Linking from "expo-linking";
 import AppText from "../components/AppText";
 import colors from "../config/colors";
 import Footer from "../components/Footer";
+import GreteButton from "../components/GreteButton";
 
 function MiljoScreen(props) {
   return (
@@ -37,6 +38,25 @@ function MiljoScreen(props) {
             style={styles.Line}
             source={require("../assets/LineThin.png")}
           />
+          <AppText style={styles.header}>Skolehelsetjenesten</AppText>
+          <AppText style={styles.text}>
+            Skolehelsetjenesten er et åpent tilbud til alle elevene ved skolen
+            og består av 2 helsesykepleiere.
+          </AppText>
+        </View>
+
+        <GreteButton />
+        <View style={styles.container}>
+          <AppText style={styles.text}>
+            Skolehelsetjenestens oppgaver er:{"\n"}🟡Oppfølging av elever med
+            psykiske vansker{"\n"}🟡Samtaler i forhold til trivsel, selvtillit,
+            press, identitet
+            {"\n"}🟡 Samtaler og evt. hjelp videre i forhold til rusproblematikk
+            {"\n"}🟡 Prevensjonsveiledning{"\n"}🟡 Fysiske forhold som stell av
+            sår, fjerne sting, vurdere skader {"\n"}🟡Testing og behandling av
+            kjønnssykdommer{"\n"}🟡 Arbeid med elever som holder på å droppe ut
+            av skolen
+          </AppText>
         </View>
         <Footer />
       </ScrollView>
@@ -47,8 +67,7 @@ function MiljoScreen(props) {
 const styles = StyleSheet.create({
   container: {
     margin: 10,
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent: "flex-start"
   },
   cover: {
     width: "100%",
@@ -65,6 +84,11 @@ const styles = StyleSheet.create({
     height: 80,
     marginBottom: 10,
     resizeMode: "contain"
+  },
+  header: {
+    fontSize: 25,
+    fontWeight: "500",
+    marginBottom: 10
   }
 });
 

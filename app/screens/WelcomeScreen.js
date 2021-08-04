@@ -23,7 +23,7 @@ function WelcomeScreen({ navigation }) {
         />
         <AppButton
           title="Ansatte"
-          onPress={() => navigation.navigate("TeacherWelcomeScreen")}
+          onPress={() => navigation.navigate("HomeTeacherNavigator")}
         />
       </View>
     </ImageBackground>

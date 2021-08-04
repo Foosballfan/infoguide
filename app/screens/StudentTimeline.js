@@ -48,6 +48,11 @@ export default class Example extends Component {
         time: "22.08",
         title: "📸 Elevfotografering alle klasser",
         description: "22 til 25 august skjer det fotografering av elevene"
+      },
+      {
+        time: "22.08",
+        title: "🦺 HMS dager",
+        description: "HMS dager for vg1 elever"
       }
     ];
   }

@@ -32,12 +32,17 @@ function Festival(props) {
               <AppText style={styles.descText}> Program</AppText>
 
               <AppText style={styles.infoText}>
-                Kl 19:00 Kjartan Lauritzen
+                Kl 12:00 Kjartan Lauritzen
               </AppText>
-              <AppText style={styles.infoText}>Kl 20:00 Sebastian Zalo</AppText>
+              <AppText style={styles.infoText}>Kl 13:00 Sebastian Zalo</AppText>
+              <AppText style={styles.infoText}>Kl 14:00 Iris</AppText>
 
               <AppText style={styles.descText}> Hvor</AppText>
-              <AppText style={styles.infoText}>Beniksbukta (kart)</AppText>
+              <AppText style={styles.infoText}>Bendiksbukta, Odderøya</AppText>
+              <Image
+                style={styles.imageMap}
+                source={require("../assets/kart.jpg")}
+              />
               <AppText style={styles.descText}> Sponsorer</AppText>
               <View style={styles.spons}>
                 <Image
@@ -114,6 +119,11 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 70,
     margin: 5,
+    resizeMode: "contain"
+  },
+  imageMap: {
+    width: "100%",
+    height: 300,
     resizeMode: "contain"
   }
 });

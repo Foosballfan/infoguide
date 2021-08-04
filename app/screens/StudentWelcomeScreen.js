@@ -92,6 +92,20 @@ function StudentWelcomeScreen({ onPress, navigation }) {
               </AppText>
             </View>
           </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Facts")}>
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/glass.png")}
+              />
+
+              <AppText style={styles.title}>Fakta</AppText>
+              <AppText numberOfLines={3} style={styles.subTitle}>
+                Bestill Kvadraturen vgs sin skolegenser. - Se om du har rett til
+                skoleskyss.
+              </AppText>
+            </View>
+          </TouchableOpacity>
         </View>
       </ScrollView>
       <Footer />

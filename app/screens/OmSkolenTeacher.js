@@ -5,7 +5,7 @@ import * as Linking from "expo-linking";
 
 import AppButton from "../components/AppButton";
 import colors from "../config/colors";
-import Footer from "../components/Footer";
+
 import Servicetorget from "../components/Servicetorget";
 import Studieverksted from "../components/Studieverksted";
 import Kantine from "../components/Kantine";
@@ -14,14 +14,18 @@ import Elevrad from "../components/Elevrad";
 import YtButton from "../components/YtButton";
 import AppText from "../components/AppText";
 import InfoButton from "../components/InfoButton";
+import FooterTeacher from "../components/FooterTeacher";
 
-function OmSkolen({ navigation }) {
+function OmSkolenTeacher({ navigation }) {
   return (
     <>
-      <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
+      <ScrollView style={{ backgroundColor: colors.primaryLight }}>
         <YtButton />
         <View style={styles.container}>
-          <Image style={styles.Line} source={require("../assets/Line.png")} />
+          <Image
+            style={styles.Line}
+            source={require("../assets/LineGreen.png")}
+          />
           <AppText style={styles.headline}>
             Kart over skolens byggninger
           </AppText>
@@ -46,7 +50,7 @@ function OmSkolen({ navigation }) {
             }}
           />
         </View>
-        <Footer />
+        <FooterTeacher />
       </ScrollView>
     </>
   );
@@ -87,4 +91,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default OmSkolen;
+export default OmSkolenTeacher;

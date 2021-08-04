@@ -2,10 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import { createStackNavigator } from "@react-navigation/stack";
-import StudentWelcomeScreen from "../screens/StudentWelcomeScreen";
-
-import KontaktScreen from "../screens/KontaktScreen";
+import colors from "../config/colors";
 import HomeNavigator from "../navigation/HomeNavigator";
 import InfoNavigator from "../navigation/InfoNavigator";
 import SchoolNavigation from "../navigation/SchoolNavigation";
@@ -16,6 +13,7 @@ const Tab = createBottomTabNavigator();
 const AppNavigator = () => (
   <Tab.Navigator
     tabBarOptions={{
+      activeTintColor: colors.secondary,
       style: {
         backgroundColor: "rgba(225, 255, 255, 0.95)",
         position: "absolute",

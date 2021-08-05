@@ -8,6 +8,7 @@ import Festival from "../screens/Festival";
 import StudentTimeline from "../screens/StudentTimeline";
 import MiljoScreen from "../screens/MiljoScreen";
 import Facts from "../screens/Facts";
+import HelseScreen from "../screens/HelseScreen";
 
 const Stack = createStackNavigator();
 
@@ -66,6 +67,22 @@ const HomeNavigator = () => (
       component={MiljoScreen}
       options={{
         title: "MILJØ",
+        headerStyle: {
+          backgroundColor: colors.secondary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="HelseScreen"
+      component={HelseScreen}
+      options={{
+        title: "HELSE",
         headerStyle: {
           backgroundColor: colors.secondary
         },

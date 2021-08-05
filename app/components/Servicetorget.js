@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { Platform, StyleSheet, View, Text, Button } from "react-native";
+import { Platform, StyleSheet, View, Image } from "react-native";
 
 import AppText from "./AppText";
 import InfoButton from "./InfoButton";
+
+import Unorderedlist from "react-native-unordered-list";
 
 export default class Servicetorget extends Component {
   constructor() {
@@ -25,19 +27,20 @@ export default class Servicetorget extends Component {
             title="Servicetorget"
             onPress={this.componentHideAndShow}
           />
-          {// Display the content in screen when state object "content" is true.
-          // Hide the content in screen when state object "content" is false.
-          this.state.content ? (
-            <AppText style={styles.headerText}>
-              {" "}
-              Servicetorget er skolens knutepunkt. Her finner du ekspedisjon og
-              sentralbord med kontormedarbeidere som ivaretar mange funksjoner,
-              som for eksempel: ● skoleskyss ● elevbevis ● lån/stipend ●
-              vitnemål/kompetansebevis ... og mye mer! Her kan du alltid henvise
-              deg om du lurer på noe. Åpningstid  Mandag- fredag kl. 07.30 -
-              15.00  Telefon: 38 07 73 00 NB! Skolens inngangsdører er åpne
-              mellom kl. 07.00 og 14.45, mandag til fredag.{" "}
-            </AppText>
+          {this.state.content ? (
+            <>
+              <Image
+                style={styles.image}
+                source={require("../assets/servicetorget.png")}
+              />
+              <AppText style={styles.headerText}>
+                Servicetorget er skolens knutepunkt. Her finner du ekspedisjon
+                og sentralbord med kontormedarbeidere som ivaretar mange
+                funksjoner, som for eksempel:{"\n"}● skoleskyss{"\n"}● elevbevis{" "}
+                {"\n"}● lån/stipend {"\n"}● vitnemål/kompetansebevis {"\n"}...
+                og mye mer! Her kan du alltid henvise deg om du lurer på noe.
+              </AppText>
+            </>
           ) : null}
         </View>
       </>
@@ -50,7 +53,13 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start"
   },
   headerText: {
-    fontSize: 18,
+    fontSize: 20,
     margin: 10
+  },
+  image: {
+    width: 300,
+    height: 200,
+    resizeMode: "cover",
+    borderRadius: 20
   }
 });

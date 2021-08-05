@@ -11,7 +11,7 @@ export default class Example extends Component {
       {
         time: "19.08",
         title: "🎓 Første skoledag",
-        description: "Første skoledag yay "
+        description: "Kl. 09.00 VG1 - Kl. 10.00 VG2 - Kl. 11.00 VG3 "
       },
       {
         time: "20.08",

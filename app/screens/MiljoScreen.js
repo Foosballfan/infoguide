@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  View,
-  StyleSheet,
-  ScrollView,
-  TouchableOpacity,
-  Image,
-  SectionList
-} from "react-native";
+import { View, StyleSheet, ScrollView, Image, Text } from "react-native";
 
 import * as Linking from "expo-linking";
 
@@ -21,7 +14,7 @@ function MiljoScreen(props) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <Image
           style={styles.cover}
-          source={require("../assets/miljoteam.jpg")}
+          source={require("../assets/miljo-team.jpg")}
         />
         <View style={styles.container}>
           <AppText style={styles.text}>
@@ -38,26 +31,8 @@ function MiljoScreen(props) {
             style={styles.Line}
             source={require("../assets/LineThin.png")}
           />
-          <AppText style={styles.header}>Skolehelsetjenesten</AppText>
-          <AppText style={styles.text}>
-            Skolehelsetjenesten er et åpent tilbud til alle elevene ved skolen
-            og består av 2 helsesykepleiere.
-          </AppText>
         </View>
 
-        <GreteButton />
-        <View style={styles.container}>
-          <AppText style={styles.text}>
-            Skolehelsetjenestens oppgaver er:{"\n"}🟡Oppfølging av elever med
-            psykiske vansker{"\n"}🟡Samtaler i forhold til trivsel, selvtillit,
-            press, identitet
-            {"\n"}🟡 Samtaler og evt. hjelp videre i forhold til rusproblematikk
-            {"\n"}🟡 Prevensjonsveiledning{"\n"}🟡 Fysiske forhold som stell av
-            sår, fjerne sting, vurdere skader {"\n"}🟡Testing og behandling av
-            kjønnssykdommer{"\n"}🟡 Arbeid med elever som holder på å droppe ut
-            av skolen
-          </AppText>
-        </View>
         <Footer />
       </ScrollView>
     </>

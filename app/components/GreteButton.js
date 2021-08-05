@@ -27,6 +27,10 @@ export default class GreteButton extends Component {
                 style={styles.image}
                 source={require("../assets/grete.jpg")}
               />
+              <Image
+                style={styles.AppTextTouch}
+                source={require("../assets/touch.png")}
+              />
               <AppText style={styles.AppText}>Grete Seland Aasen</AppText>
               <Image
                 style={styles.image}
@@ -73,6 +77,13 @@ const styles = StyleSheet.create({
     color: colors.black,
     bottom: 15,
     left: 0
+  },
+  AppTextTouch: {
+    position: "absolute",
+    width: 40,
+    height: 40,
+    bottom: 200,
+    left: 10
   },
   desc: {
     position: "absolute",

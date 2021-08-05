@@ -4,22 +4,23 @@ import * as Linking from "expo-linking";
 
 import AppText from "../components/AppText";
 
-function YtButton() {
+function YtVismaButton() {
   return (
     <View style={styles.container}>
+      <AppText style={styles.text}>
+        Videoen varer i kun 6 minutter og går igjennom de viktigste funksjonene
+        i Visma InSchool og gjør deg klar til å ta i bruk systemet.
+      </AppText>
       <TouchableOpacity
         onPress={() => {
-          Linking.openURL("https://www.youtube.com/watch?v=lEULLpsuK1I");
+          Linking.openURL("https://www.youtube.com/watch?v=vJBEy9r3-b4");
         }}
       >
         <Image
           style={{ width: "100%", height: 210, resizeMode: "contain" }}
-          source={require("../assets/kvaddaYT.png")}
+          source={require("../assets/vismaVid.png")}
         />
       </TouchableOpacity>
-      <AppText style={styles.text}>
-        🎬 Bli kjent på skolen gjennom Kvadraturens YouTube video
-      </AppText>
     </View>
   );
 }
@@ -27,8 +28,8 @@ function YtButton() {
 const styles = StyleSheet.create({
   text: {
     justifyContent: "center",
-    margin: 10
+    margin: 0
   }
 });
 
-export default YtButton;
+export default YtVismaButton;

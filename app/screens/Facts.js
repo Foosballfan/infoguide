@@ -18,9 +18,18 @@ function Facts(props) {
   return (
     <>
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
-        <Image style={styles.cover} source={require("../assets/glass.png")} />
+        <Image style={styles.cover} source={require("../assets/kvadda.png")} />
         <View style={styles.container}>
-          <AppText style={styles.header}>Diverse fakta 🔎</AppText>
+          <AppText style={styles.header}>Diverse fakta om skolen </AppText>
+          <AppText style={styles.headerText}>
+            🎒 Oppmøte første skoledag, torsdag 19.august.{"\n"}Kl. 09.00 VG1{" "}
+            {"\n"}Kl. 10.00 VG2 {"\n"}Kl. 11.00 VG3
+          </AppText>
+          <AppText style={styles.headerText}>
+            🕖 Skolens inngangsdører er åpne mellom kl. 07.00 og 14.45, mandag
+            til fredag.
+          </AppText>
+          <AppText style={styles.headerText}>📞 Telefon: 38 07 73 00</AppText>
           <AppText style={styles.headerText}>
             👇 Trykk for å bestille Kvadraturens skolegensere allerede nå!
           </AppText>
@@ -92,10 +101,7 @@ const styles = StyleSheet.create({
   cover: {
     width: "100%",
     height: 200,
-    resizeMode: "cover",
-    borderTopLeftRadius: 50,
-    borderBottomLeftRadius: 50,
-    marginLeft: 20
+    resizeMode: "cover"
   },
   header: {
     fontSize: 25,
@@ -125,12 +131,9 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   imageGenser: {
-    width: "95%",
+    width: "100%",
     height: 250,
-    resizeMode: "cover",
-    borderTopRightRadius: 50,
-    borderBottomRightRadius: 50,
-    marginLeft: 0
+    resizeMode: "cover"
   }
 });
 

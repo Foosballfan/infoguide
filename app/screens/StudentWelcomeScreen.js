@@ -51,11 +51,25 @@ function StudentWelcomeScreen({ onPress, navigation }) {
             <View style={styles.card}>
               <Image
                 style={styles.Cardimage}
-                source={require("../assets/miljoteam.jpg")}
+                source={require("../assets/miljo-team.jpg")}
+              />
+
+              <AppText style={styles.title}>Miljøteamet</AppText>
+              <AppText numberOfLines={3} style={styles.subTitle}>
+                På skolen ønsker vi å ta vare på elevene, så vi har mange du kan
+                kontakte hvis du trenger noen å snakke med.
+              </AppText>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("HelseScreen")}>
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/snakke.jpg")}
               />
 
               <AppText style={styles.title}>
-                Trenger du noen å snakke med?
+                Trenger du noen å snakke med ?
               </AppText>
               <AppText numberOfLines={3} style={styles.subTitle}>
                 På skolen ønsker vi å ta vare på elevene, så vi har mange du kan
@@ -96,7 +110,7 @@ function StudentWelcomeScreen({ onPress, navigation }) {
             <View style={styles.card}>
               <Image
                 style={styles.Cardimage}
-                source={require("../assets/glass.png")}
+                source={require("../assets/kvadda.png")}
               />
 
               <AppText style={styles.title}>Fakta</AppText>

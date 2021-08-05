@@ -3,8 +3,9 @@ import { View, StyleSheet } from "react-native";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import colors from "../config/colors";
-import InfoScreen from "../screens/InfoScreen";
+
 import KontaktScreen from "../screens/KontaktScreen";
+import MiljoScreen from "../screens/MiljoScreen";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,22 @@ const ContactNavigator = () => (
           fontWeight: "bold",
           letterSpacing: 2
         },
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="MiljoScreen"
+      component={MiljoScreen}
+      options={{
+        title: "MILJØ",
+        headerStyle: {
+          backgroundColor: colors.secondary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
         headerTintColor: colors.white
       }}
     />

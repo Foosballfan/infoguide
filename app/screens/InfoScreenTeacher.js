@@ -1,15 +1,17 @@
 import React from "react";
-import { View, StyleSheet, ScrollView, Text } from "react-native";
+import { View, StyleSheet, ScrollView, Text, Image } from "react-native";
 import colors from "../config/colors";
 
 import FooterTeacher from "../components/FooterTeacher";
+import AppText from "../components/AppText";
 
 function InfoScreenTeacher(props) {
   return (
     <>
       <ScrollView style={{ backgroundColor: colors.primaryLight }}>
+        <Image style={styles.cover} source={require("../assets/tools.jpg")} />
         <View style={styles.container}>
-          <Text style={styles.text}>
+          <AppText style={styles.text}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -19,7 +21,7 @@ function InfoScreenTeacher(props) {
             with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
-          </Text>
+          </AppText>
         </View>
         <FooterTeacher />
       </ScrollView>
@@ -32,6 +34,11 @@ const styles = StyleSheet.create({
     margin: 20,
     justifyContent: "center",
     alignItems: "center"
+  },
+  cover: {
+    width: "100%",
+    height: 200,
+    resizeMode: "cover"
   },
   headline: {
     fontSize: 25

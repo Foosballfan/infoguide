@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import colors from "../config/colors";
 
 import KontaktScreenTeacher from "../screens/KontaktScreenTeacher";
+import MiljoScreen from "../screens/MiljoScreen";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,22 @@ const ContactTeacherNavigator = () => (
           fontWeight: "bold",
           letterSpacing: 2
         },
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="MiljoScreen"
+      component={MiljoScreen}
+      options={{
+        title: "MILJØ",
+        headerStyle: {
+          backgroundColor: colors.primary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
         headerTintColor: colors.white
       }}
     />

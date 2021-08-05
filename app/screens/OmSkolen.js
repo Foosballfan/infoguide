@@ -24,7 +24,7 @@ function OmSkolen({ navigation }) {
           🕖 Skolens inngangsdører er åpne mellom kl. 07.00 og 14.45, mandag til
           fredag.
         </AppText>
-        <AppText style={styles.headerText}>📞 Telefon: 38 07 73 00</AppText>
+
         <View style={styles.container}>
           <Image style={styles.Line} source={require("../assets/Line.png")} />
           <AppText style={styles.headline}>

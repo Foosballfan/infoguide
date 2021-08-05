@@ -1,27 +1,91 @@
 import React from "react";
-import { View, StyleSheet, ScrollView, Text } from "react-native";
+import {
+  View,
+  StyleSheet,
+  ScrollView,
+  Image,
+  TouchableOpacity
+} from "react-native";
+
+import * as Linking from "expo-linking";
+import AppText from "../components/AppText";
 import colors from "../config/colors";
-
 import FooterTeacher from "../components/FooterTeacher";
+import RektorButton from "../components/RektorButton";
+import InfoButton from "../components/InfoButton";
 
-function KontaktScreenTeacher(props) {
+function KontaktScreenTeacher({ navigation }) {
   return (
     <>
       <ScrollView style={{ backgroundColor: colors.primaryLight }}>
+        <Image style={styles.cover} source={require("../assets/kvadda3.jpg")} />
         <View style={styles.container}>
-          <Text style={styles.headline}>Kontakt Informasjon</Text>
+          <AppText style={styles.headline}>
+            Kvadraturen Vidregående Skole
+          </AppText>
 
-          <Text style={styles.text}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </Text>
+          <TouchableOpacity onPress={() => Linking.openURL("tel:38 07 73 00")}>
+            <AppText style={{ color: "green" }}>
+              📞 Telefon: 38 07 73 00
+            </AppText>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => Linking.openURL("tel:kontakt@kvadraturen.vgs.no")}
+          >
+            <AppText style={{ color: "blue" }}>
+              ✉️ Email: kontakt@kvadraturen.vgs.no
+            </AppText>
+          </TouchableOpacity>
+          <AppText style={styles.headlineText}>
+            📍 Tollbodgata 75 4614 Kristiansand{" "}
+          </AppText>
+        </View>
+        <RektorButton />
+        <View style={styles.container}>
+          <AppText style={styles.headlineText}>
+            👇 Lenker til våre ansatte
+          </AppText>
+          <InfoButton
+            color="primary"
+            title="ledelsen ↗️"
+            onPress={() =>
+              Linking.openURL(
+                "https://kvadraturen.vgs.no/skolen-var/om-skolen/ledelsen/"
+              )
+            }
+          />
+          <InfoButton
+            color="primary"
+            title="rådgivere ↗️"
+            onPress={() =>
+              Linking.openURL(
+                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/radgivere/"
+              )
+            }
+          />
+          <InfoButton
+            color="primary"
+            title="Skolehelsetjenesten ↗️"
+            onPress={() =>
+              Linking.openURL(
+                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/skolehelsetjenesten/"
+              )
+            }
+          />
+          <InfoButton
+            color="primary"
+            title="IT-Avdelingen ↗️"
+            onPress={() =>
+              Linking.openURL(
+                "https://kvadraturen.vgs.no/for-elever/skolehverdag/ikt/"
+              )
+            }
+          />
+          <InfoButton
+            color="primary"
+            title="Miljøteam"
+            onPress={() => navigation.navigate("MiljoScreen")}
+          />
         </View>
         <FooterTeacher />
       </ScrollView>
@@ -31,17 +95,28 @@ function KontaktScreenTeacher(props) {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 20,
-    justifyContent: "center",
-    alignItems: "center"
+    margin: 10,
+    justifyContent: "flex-start"
   },
   headline: {
-    fontSize: 25
+    fontSize: 25,
+    fontWeight: "500",
+    marginBottom: 15
+  },
+  cover: {
+    width: "100%",
+    height: 200,
+    resizeMode: "cover"
+  },
+  headlineDesc: {
+    fontSize: 23,
+    fontWeight: "500"
   },
   text: {
-    marginTop: 20,
-    fontSize: 20
+    fontSize: 20,
+    marginBottom: 10
   },
+
   image: {
     width: "100%",
     height: 250,

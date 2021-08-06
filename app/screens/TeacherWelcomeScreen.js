@@ -17,7 +17,11 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
   return (
     <ScrollView style={{ backgroundColor: colors.primaryLight }}>
       <View style={styles.container}>
-        <AppText style={styles.welcome}>Velkommen til Kvadraturen VGS</AppText>
+        <AppText style={styles.welcome}>Velkommen til</AppText>
+        <AppText style={[styles.welcome, styles.italic]}>Kvadraturen</AppText>
+        <AppText style={[styles.welcome, styles.underline]}>
+          Vidregående skole
+        </AppText>
         <Image
           style={styles.Line}
           source={require("../assets/LineGreen.png")}
@@ -33,20 +37,47 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
       <ScrollView horizontal>
         <View style={styles.Cardcontainer}>
           <TouchableOpacity
-            onPress={() => navigation.navigate("StudentTimeline")}
+            onPress={() => navigation.navigate("TeachersTimeframe")}
           >
             <View style={styles.card}>
               <Image
                 style={styles.Cardimage}
-                source={require("../assets/firstweek.jpg")}
+                source={require("../assets/calendar.png")}
               />
 
-              <AppText style={styles.title}>
-                Se hva som skjer den første uken
-              </AppText>
+              <AppText style={styles.title}>Tidshjul</AppText>
               <AppText numberOfLines={3} style={styles.subTitle}>
-                Det er mye som skjer første uken på skolen, se oversikt over din
-                klasse her
+                Det er mye som skjer den første tiden på skolen, se oversikten
+                her.
+              </AppText>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onPress}>
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/yoga.jpg")}
+              />
+
+              <AppText style={styles.title}>Sosiale aktiviteter</AppText>
+              <AppText numberOfLines={4} style={styles.subTitle}>
+                Det vil skje morsomme sosiale aktiviterer fremover. Se oversikt
+                her.
+              </AppText>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("TeachersOverView")}
+          >
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/hvemhva.jpg")}
+              />
+
+              <AppText style={styles.title}>Hvem gjør hva ?</AppText>
+              <AppText numberOfLines={4} style={styles.subTitle}>
+                Oversikt over hvem som gjør hva, og din rolle som lærer.
               </AppText>
             </View>
           </TouchableOpacity>
@@ -57,41 +88,10 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
                 source={require("../assets/miljoteam.jpg")}
               />
 
-              <AppText style={styles.title}>
-                Trenger du noen å snakke med?
-              </AppText>
+              <AppText style={styles.title}>Miljøteamet</AppText>
               <AppText numberOfLines={3} style={styles.subTitle}>
                 På skolen ønsker vi å ta vare på elevene, så vi har mange du kan
                 kontakte hvis du trenger noen å snakke med.
-              </AppText>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={onPress}>
-            <View style={styles.card}>
-              <Image
-                style={styles.Cardimage}
-                source={require("../assets/games.jpg")}
-              />
-
-              <AppText style={styles.title}>Aktiviteter i lunsjen</AppText>
-              <AppText numberOfLines={4} style={styles.subTitle}>
-                Det vil være morsomme aktviteter i lunsjen fremvoer, se oversikt
-                over hva som skjer
-              </AppText>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={onPress}>
-            <View style={styles.card}>
-              <Image
-                style={styles.Cardimage}
-                source={require("../assets/calendar.png")}
-              />
-
-              <AppText style={styles.title}>
-                Se viktige datoer frem til høstferien
-              </AppText>
-              <AppText numberOfLines={3} style={styles.subTitle}>
-                Det er mye som skjer den første tiden på skolen, se oversikt her
               </AppText>
             </View>
           </TouchableOpacity>
@@ -104,15 +104,17 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: 10,
+    margin: 10,
+    marginTop: 20,
     justifyContent: "center",
     alignItems: "center"
   },
   welcome: {
     fontWeight: "800",
-    margin: 5,
-    marginTop: 20,
-    fontSize: 22
+    fontSize: 30,
+    textTransform: "uppercase",
+    letterSpacing: 1,
+    fontWeight: "700"
   },
   description: {
     margin: 10,
@@ -185,7 +187,8 @@ const styles = StyleSheet.create({
     color: "gray",
     fontSize: 16,
     marginHorizontal: 5
-  }
+  },
+  italic: { fontStyle: "italic", color: colors.primary }
 });
 
 export default TeacherwelcomeScreen;

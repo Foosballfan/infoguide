@@ -21,9 +21,12 @@ function KontaktScreenTeacher({ navigation }) {
         <Image style={styles.cover} source={require("../assets/kvadda3.jpg")} />
         <View style={styles.container}>
           <AppText style={styles.headline}>
-            Kvadraturen Vidregående Skole
+            Kvadraturen{"\n"}Vidregående Skole
           </AppText>
-
+          <AppText style={styles.headlineText}>
+            🕖 Skolens inngangsdører er åpne mellom kl. 07.00 og 14.45, mandag
+            til fredag.
+          </AppText>
           <TouchableOpacity onPress={() => Linking.openURL("tel:38 07 73 00")}>
             <AppText style={{ color: "green" }}>
               📞 Telefon: 38 07 73 00
@@ -40,20 +43,17 @@ function KontaktScreenTeacher({ navigation }) {
             📍 Tollbodgata 75 4614 Kristiansand{" "}
           </AppText>
         </View>
-        <RektorButton />
+
         <View style={styles.container}>
           <AppText style={styles.headlineText}>
             👇 Lenker til våre ansatte
           </AppText>
           <InfoButton
             color="primary"
-            title="ledelsen ↗️"
-            onPress={() =>
-              Linking.openURL(
-                "https://kvadraturen.vgs.no/skolen-var/om-skolen/ledelsen/"
-              )
-            }
+            title="ledelsen"
+            onPress={() => navigation.navigate("Ledelsen")}
           />
+
           <InfoButton
             color="primary"
             title="rådgivere ↗️"
@@ -122,6 +122,10 @@ const styles = StyleSheet.create({
     height: 250,
     margin: 10,
     borderRadius: 10
+  },
+  headlineText: {
+    fontSize: 20,
+    marginBottom: 5
   }
 });
 

@@ -19,21 +19,12 @@ function OmSkolen({ navigation }) {
     <>
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <YtButton />
-
-        <AppText style={styles.headerText}>
-          🕖 Skolens inngangsdører er åpne mellom kl. 07.00 og 14.45, mandag til
-          fredag.
+        <AppText style={styles.headline}>
+          Om Kvadraturen{"\n"}Vidregående Skole
         </AppText>
-
+        <Image style={styles.Line} source={require("../assets/Line.png")} />
         <View style={styles.container}>
-          <Image style={styles.Line} source={require("../assets/Line.png")} />
-          <AppText style={styles.headline}>
-            Kart over skolens byggninger
-          </AppText>
-        </View>
-        <Image style={styles.map} source={require("../assets/skolekart.png")} />
-        <View style={styles.container}>
-          <AppText style={styles.headline}>
+          <AppText style={styles.headlinedesc}>
             👇 Klikk for å lese om skolen
           </AppText>
 
@@ -48,6 +39,14 @@ function OmSkolen({ navigation }) {
               Linking.openURL("https://kvadraturen.vgs.no/utdanningstilbud/");
             }}
           />
+          <Image style={styles.Line} source={require("../assets/Line.png")} />
+          <AppText style={styles.headline}>
+            Kart over skolens byggninger
+          </AppText>
+        </View>
+        <Image style={styles.map} source={require("../assets/skolekart.png")} />
+
+        <View style={styles.container}>
           <AppText style={styles.headline}>Timeplan</AppText>
           <Image
             style={styles.timeplan}
@@ -67,7 +66,15 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   headline: {
-    fontSize: 25
+    fontSize: 30,
+    marginHorizontal: 10,
+    marginTop: 10,
+    fontWeight: "500"
+  },
+  headlinedesc: {
+    fontSize: 22,
+    margin: 5,
+    fontWeight: "500"
   },
   text: {
     marginTop: 20,
@@ -89,8 +96,9 @@ const styles = StyleSheet.create({
   Line: {
     flex: 1,
     width: "100%",
-    height: 80,
+    height: 50,
     marginBottom: 10,
+    marginTop: 10,
     resizeMode: "contain"
   },
   headerText: {

@@ -21,7 +21,7 @@ function InfoScreen(props) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <Image style={styles.cover} source={require("../assets/tools.jpg")} />
         <View style={styles.container}>
-          <AppText style={styles.headline}>🛠 Skolens brukerverktøy</AppText>
+          <AppText style={styles.headline}>Skolens brukerverktøy</AppText>
           <AppText style={styles.text}>
             👇 Klikk på ikonene for å logge inn eller lese mer
           </AppText>
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     resizeMode: "cover"
   },
   headline: {
-    fontSize: 25,
+    fontSize: 30,
     fontWeight: "500",
     marginBottom: 15
   },
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 100,
     resizeMode: "contain",
-    marginBottom: 5
+    marginBottom: 10
   },
   imageContainer: {
     alignContent: "center",

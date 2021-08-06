@@ -12,7 +12,7 @@ function ImageButton({ onPress, navigation }) {
           source={require("../assets/oppstartsfestivalen.png")}
         />
       </TouchableOpacity>
-      <AppText>
+      <AppText style={styles.text}>
         🎉 Vi kickstarter skoleåret med festival! Her finner du all
         informasjonen du trenger å vite om den store festen i Bendiksbukta.
       </AppText>
@@ -21,7 +21,10 @@ function ImageButton({ onPress, navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: {}
+  text: {
+    fontSize: 20,
+    marginBottom: 5
+  }
 });
 
 export default ImageButton;

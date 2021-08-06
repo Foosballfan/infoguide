@@ -18,7 +18,7 @@ function YtButton() {
         />
       </TouchableOpacity>
       <AppText style={styles.text}>
-        🎬 Bli kjent på skolen gjennom Kvadraturens YouTube video
+        🎬 Bli kjent på skolen gjennom Kvadraturen vgs's YouTube video
       </AppText>
     </View>
   );
@@ -26,8 +26,9 @@ function YtButton() {
 
 const styles = StyleSheet.create({
   text: {
+    fontSize: 18,
     justifyContent: "center",
-    margin: 10
+    marginHorizontal: 10
   }
 });
 

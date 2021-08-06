@@ -17,7 +17,11 @@ function StudentWelcomeScreen({ onPress, navigation }) {
   return (
     <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
       <View style={styles.container}>
-        <AppText style={styles.welcome}>Velkommen til Kvadraturen VGS</AppText>
+        <AppText style={styles.welcome}>Velkommen til</AppText>
+        <AppText style={[styles.welcome, styles.italic]}>Kvadraturen</AppText>
+        <AppText style={[styles.welcome, styles.underline]}>
+          Vidregående skole
+        </AppText>
         <Image style={styles.Line} source={require("../assets/LineThin.png")} />
 
         <View style={styles.festival}>
@@ -91,21 +95,7 @@ function StudentWelcomeScreen({ onPress, navigation }) {
               </AppText>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={onPress}>
-            <View style={styles.card}>
-              <Image
-                style={styles.Cardimage}
-                source={require("../assets/calendar.png")}
-              />
 
-              <AppText style={styles.title}>
-                Se viktige datoer frem til høstferien
-              </AppText>
-              <AppText numberOfLines={3} style={styles.subTitle}>
-                Det er mye som skjer den første tiden på skolen, se oversikt her
-              </AppText>
-            </View>
-          </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate("Facts")}>
             <View style={styles.card}>
               <Image
@@ -129,15 +119,17 @@ function StudentWelcomeScreen({ onPress, navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: 10,
+    margin: 10,
+    marginTop: 20,
     justifyContent: "center",
     alignItems: "center"
   },
   welcome: {
     fontWeight: "800",
-    margin: 5,
-    marginTop: 20,
-    fontSize: 22
+    fontSize: 30,
+    textTransform: "uppercase",
+    letterSpacing: 1,
+    fontWeight: "700"
   },
   description: {
     margin: 10,
@@ -164,7 +156,7 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   festival: {
-    margin: 4,
+    margin: 0,
     marginBottom: 20,
     fontWeight: "500"
   },
@@ -210,7 +202,8 @@ const styles = StyleSheet.create({
     color: "gray",
     fontSize: 16,
     marginHorizontal: 5
-  }
+  },
+  italic: { fontStyle: "italic", color: colors.secondary }
 });
 
 export default StudentWelcomeScreen;

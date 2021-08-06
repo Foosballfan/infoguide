@@ -6,6 +6,7 @@ import colors from "../config/colors";
 
 import KontaktScreen from "../screens/KontaktScreen";
 import MiljoScreen from "../screens/MiljoScreen";
+import LedelsenStudent from "../screens/LedelsenStudent";
 
 const Stack = createStackNavigator();
 
@@ -33,6 +34,22 @@ const ContactNavigator = () => (
       component={MiljoScreen}
       options={{
         title: "MILJØ",
+        headerStyle: {
+          backgroundColor: colors.secondary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="LedelsenStudent"
+      component={LedelsenStudent}
+      options={{
+        title: "LEDELSEN",
         headerStyle: {
           backgroundColor: colors.secondary
         },

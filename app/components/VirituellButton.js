@@ -18,6 +18,7 @@ function VirituellButton({ onPress, navigation }) {
           source={require("../assets/virituelskole.png")}
         />
       </TouchableOpacity>
+
       <AppText style={styles.text}>
         👋 Bli kjent på skolen via vår virutuelle digitale skole.
       </AppText>
@@ -26,11 +27,9 @@ function VirituellButton({ onPress, navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginBottom: 15
-  },
+  container: {},
   text: {
-    marginTop: 10
+    marginBottom: 10
   }
 });
 

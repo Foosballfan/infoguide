@@ -1,5 +1,11 @@
 import React from "react";
-import { View, StyleSheet, ScrollView, Image, Text } from "react-native";
+import {
+  View,
+  StyleSheet,
+  ScrollView,
+  Image,
+  TouchableOpacity
+} from "react-native";
 
 import * as Linking from "expo-linking";
 
@@ -31,6 +37,85 @@ function MiljoScreen(props) {
             style={styles.Line}
             source={require("../assets/LineThin.png")}
           />
+
+          <View style={styles.row}>
+            <Image
+              style={styles.rowImage}
+              source={require("../assets/marius.png")}
+            />
+            <View style={styles.rowText}>
+              <AppText style={styles.name}>MARIUS</AppText>
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <View style={styles.rowText}>
+              <AppText style={styles.name}>THEA</AppText>
+            </View>
+            <Image
+              style={styles.rowImage}
+              source={require("../assets/Thea.png")}
+            />
+          </View>
+
+          <View style={styles.row}>
+            <Image
+              style={styles.rowImage}
+              source={require("../assets/ruben.png")}
+            />
+            <View style={styles.rowText}>
+              <AppText style={styles.name}>RUBEN</AppText>
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <View style={styles.rowText}>
+              <AppText style={styles.name}>WENCHE</AppText>
+            </View>
+            <Image
+              style={styles.rowImage}
+              source={require("../assets/wenche.png")}
+            />
+          </View>
+
+          <View style={styles.row}>
+            <Image
+              style={styles.rowImage}
+              source={require("../assets/jaliet.png")}
+            />
+            <View style={styles.rowText}>
+              <AppText style={styles.name}>JALIET</AppText>
+            </View>
+          </View>
+          <Image
+            style={styles.Line}
+            source={require("../assets/LineThin.png")}
+          />
+          <AppText style={styles.text}>
+            🎬 Sjekk ut noen av YouTube filmene vi har laget
+          </AppText>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL("https://www.youtube.com/watch?v=BgPKC-mXytQ");
+            }}
+          >
+            <Image
+              style={{ width: "100%", height: 250, resizeMode: "contain" }}
+              source={require("../assets/delerutmat.jpg")}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL(
+                "https://www.youtube.com/watch?v=C97A9JVy3d4&t=13s"
+              );
+            }}
+          >
+            <Image
+              style={{ width: "100%", height: 250, resizeMode: "contain" }}
+              source={require("../assets/russen.jpg")}
+            />
+          </TouchableOpacity>
         </View>
 
         <Footer />
@@ -46,17 +131,18 @@ const styles = StyleSheet.create({
   },
   cover: {
     width: "100%",
-    height: 200,
+    height: 250,
     resizeMode: "cover"
   },
   text: {
     fontSize: 20,
-    marginBottom: 15
+    marginBottom: 15,
+    marginTop: 10
   },
   Line: {
     flex: 1,
     width: "100%",
-    height: 80,
+    height: 50,
     marginBottom: 10,
     resizeMode: "contain"
   },
@@ -64,6 +150,28 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "500",
     marginBottom: 10
+  },
+
+  row: {
+    flexDirection: "row"
+  },
+  rowImage: {
+    width: "50%",
+    height: 200,
+    resizeMode: "contain"
+  },
+  rowText: {
+    width: "50%",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 0
+  },
+  name: {
+    fontSize: 30,
+    fontWeight: "500",
+    marginBottom: 2,
+    color: colors.secondary,
+    fontStyle: "italic"
   }
 });
 

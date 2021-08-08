@@ -81,7 +81,9 @@ function StudentWelcomeScreen({ onPress, navigation }) {
               </AppText>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={onPress}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("AktiviteterLunsj")}
+          >
             <View style={styles.card}>
               <Image
                 style={styles.Cardimage}
@@ -136,9 +138,12 @@ const styles = StyleSheet.create({
     fontSize: 18
   },
   description2: {
-    fontSize: 24,
-    justifyContent: "center",
-    alignItems: "center",
+    fontSize: 22,
+    fontWeight: "700",
+
+    textTransform: "uppercase",
+    letterSpacing: 1,
+
     marginHorizontal: 10
   },
   button: {

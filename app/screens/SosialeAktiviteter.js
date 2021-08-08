@@ -4,32 +4,25 @@ import { View, StyleSheet, ScrollView, Image } from "react-native";
 import colors from "../config/colors";
 
 import AppText from "../components/AppText";
-import KontaktLaererButton from "../components/KontaktLaererButton";
-import FagLaererButton from "../components/FagLaererButton";
-import FagKoordinatorButton from "../components/FagKoordinatorButton";
-import Fagarbeidere from "../components/FagarbeidereButton";
-import RadgivereButton from "../components/RadgivereButton";
-import MentorButton from "../components/MentorButton";
+
 import FooterTeacher from "../components/FooterTeacher";
 
-function TeachersOverView(props) {
+function SosialeAktiviteter(props) {
   return (
     <>
       <ScrollView style={{ backgroundColor: colors.primaryLight }}>
-        <Image style={styles.cover} source={require("../assets/hvemhva.jpg")} />
+        <Image style={styles.cover} source={require("../assets/yoga.jpg")} />
         <View style={styles.container}>
-          <AppText style={styles.headline}>Hvem gjør hva ?</AppText>
+          <AppText style={styles.headline}>Sosiale Aktiviteter</AppText>
           <Image
             style={styles.Line}
             source={require("../assets/LineGreen.png")}
           />
 
-          <KontaktLaererButton />
-          <FagLaererButton />
-          <FagKoordinatorButton />
-          <Fagarbeidere />
-          <RadgivereButton />
-          <MentorButton />
+          <AppText style={styles.text}>
+            Det er gøy å være ansatt hos Kvadraturen vgs. Vi vin arrangere
+            diverse sosiale aktiviterer for våre ansatte.
+          </AppText>
         </View>
         <FooterTeacher />
       </ScrollView>
@@ -92,4 +85,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default TeachersOverView;
+export default SosialeAktiviteter;

@@ -52,20 +52,7 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
               </AppText>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={onPress}>
-            <View style={styles.card}>
-              <Image
-                style={styles.Cardimage}
-                source={require("../assets/yoga.jpg")}
-              />
 
-              <AppText style={styles.title}>Sosiale aktiviteter</AppText>
-              <AppText numberOfLines={4} style={styles.subTitle}>
-                Det vil skje morsomme sosiale aktiviterer fremover. Se oversikt
-                her.
-              </AppText>
-            </View>
-          </TouchableOpacity>
           <TouchableOpacity
             onPress={() => navigation.navigate("TeachersOverView")}
           >
@@ -81,7 +68,25 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
               </AppText>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("MiljoScreen")}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("SosialeAktiviteter")}
+          >
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/yoga.jpg")}
+              />
+
+              <AppText style={styles.title}>Sosiale aktiviteter</AppText>
+              <AppText numberOfLines={4} style={styles.subTitle}>
+                Det vil skje morsomme sosiale aktiviterer fremover. Se oversikt
+                her.
+              </AppText>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("MiljoScreenTeacher")}
+          >
             <View style={styles.card}>
               <Image
                 style={styles.Cardimage}
@@ -121,9 +126,10 @@ const styles = StyleSheet.create({
     fontSize: 18
   },
   description2: {
-    fontSize: 24,
-    justifyContent: "center",
-    alignItems: "center",
+    fontSize: 22,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 1,
     marginHorizontal: 10
   },
   button: {

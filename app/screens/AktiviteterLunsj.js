@@ -2,36 +2,32 @@ import React from "react";
 import { View, StyleSheet, ScrollView, Image } from "react-native";
 
 import colors from "../config/colors";
-
 import AppText from "../components/AppText";
-import KontaktLaererButton from "../components/KontaktLaererButton";
-import FagLaererButton from "../components/FagLaererButton";
-import FagKoordinatorButton from "../components/FagKoordinatorButton";
-import Fagarbeidere from "../components/FagarbeidereButton";
-import RadgivereButton from "../components/RadgivereButton";
-import MentorButton from "../components/MentorButton";
-import FooterTeacher from "../components/FooterTeacher";
+import Footer from "../components/Footer";
+import Unorderedlist from "react-native-unordered-list";
 
-function TeachersOverView(props) {
+function AktiviteterLunsj(props) {
   return (
     <>
-      <ScrollView style={{ backgroundColor: colors.primaryLight }}>
-        <Image style={styles.cover} source={require("../assets/hvemhva.jpg")} />
+      <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
+        <Image style={styles.cover} source={require("../assets/games.jpg")} />
         <View style={styles.container}>
-          <AppText style={styles.headline}>Hvem gjør hva ?</AppText>
+          <AppText style={styles.headline}>Aktiviteter i Lunsjen</AppText>
           <Image
             style={styles.Line}
-            source={require("../assets/LineGreen.png")}
+            source={require("../assets/LineThin.png")}
           />
 
-          <KontaktLaererButton />
-          <FagLaererButton />
-          <FagKoordinatorButton />
-          <Fagarbeidere />
-          <RadgivereButton />
-          <MentorButton />
+          <AppText style={styles.text}>
+            Miljøteamet vil arrangere morsomme aktiviteter i lunsjen.
+          </AppText>
+          <Unorderedlist>
+            <AppText style={styles.Points}>
+              27.august – Makkerlunsj.{"\n"}Makkerpar spiser lunsj sammen.
+            </AppText>
+          </Unorderedlist>
         </View>
-        <FooterTeacher />
+        <Footer />
       </ScrollView>
     </>
   );
@@ -80,8 +76,7 @@ const styles = StyleSheet.create({
     resizeMode: "contain"
   },
   Points: {
-    marginBottom: 10,
-    fontWeight: "500"
+    marginBottom: 10
   },
   Line: {
     flex: 1,
@@ -92,4 +87,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default TeachersOverView;
+export default AktiviteterLunsj;

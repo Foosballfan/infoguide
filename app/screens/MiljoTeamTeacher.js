@@ -11,13 +11,13 @@ import * as Linking from "expo-linking";
 
 import AppText from "../components/AppText";
 import colors from "../config/colors";
-import Footer from "../components/Footer";
-import GreteButton from "../components/GreteButton";
 
-function MiljoScreen(props) {
+import FooterTeacher from "../components/FooterTeacher";
+
+function MiljoScreenTeacher(props) {
   return (
     <>
-      <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
+      <ScrollView style={{ backgroundColor: colors.primaryLight }}>
         <Image
           style={styles.cover}
           source={require("../assets/miljo-team.jpg")}
@@ -25,18 +25,43 @@ function MiljoScreen(props) {
         <View style={styles.container}>
           <AppText style={styles.headline}>Miljøteamet ❤️</AppText>
           <AppText style={styles.text}>
-            - Vi i miljøteamet jobber for å skape en inkluderende hverdag for
-            elevene, der dere føler dere sett og hørt. Ikke nøl med å ta kontakt
-            med en av oss, hvis du trenger noen å snakke med eller bare vil slå
-            av en prat om skolehverdagen eller livet generelt. Vi er her for
-            dere! Vi syns også det er gøy med nye ideer til skolens sosiale
-            medier, så om du vet om noe kult vi kan poste eller informere om –
-            hyl ut. Kom gjerne innom oss på kontoret som ligger inne på
-            studieverkstedet eller huk tak i oss!
+            Elever kan også henvises til miljøteamet. Dette gjelder også for
+            eventuell ekstra oppfølging av enkeltelever, hovedsakelig sosialt,
+            men også faglig hvis det er behov. I tillegg har miljøteamet ansvar
+            for sosiale medier, så vi oppfordrer til tett dialog med miljøteamet
+            hvis det skulle dukke opp noe som er gøy å ha på skolens ulike
+            plattformer. Det kan være alt fra spennende prosjekter som
+            gjennomføres av elevene, noe spesielt som foregår i undervisningen
+            eller en elev med en interessant hobby eller et unikt talent. Heller
+            tips oss en gang for mye enn en gang for lite. Vi jobber for å skape
+            en inkluderende hverdag for elevene, der de føler seg sett og hørt.
+            Kom gjerne innom oss på kontoret som ligger inne på studieverkstedet
+            eller huk tak i oss! For sosiale media henvendelser - kontakt:
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL("mailto:kim.marius.ask@kvadraturen.vgs.no")
+              }
+            >
+              <AppText style={{ color: "blue" }}>
+                kim.marius.ask@kvadraturen.vgs.no
+              </AppText>
+            </TouchableOpacity>
+            Vi har også en miljøkoordinator, som jobber på tvers av Kvadraturen
+            vgs, KKG vgs og Tangen vgs som kan kontaktes i sammenheng med
+            utsatte enkeltelever:{" "}
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL("mailto:ruben.kleiven@kvadraturen.vgs.no")
+              }
+            >
+              <AppText style={{ color: "blue" }}>
+                ruben.kleiven@kvadraturen.vgs.no
+              </AppText>
+            </TouchableOpacity>
           </AppText>
           <Image
             style={styles.Line}
-            source={require("../assets/LineThin.png")}
+            source={require("../assets/LineGreen.png")}
           />
 
           <View style={styles.row}>
@@ -90,7 +115,7 @@ function MiljoScreen(props) {
           </View>
           <Image
             style={styles.Line}
-            source={require("../assets/LineThin.png")}
+            source={require("../assets/LineGreen.png")}
           />
           <AppText style={styles.text}>
             🎬 Sjekk ut noen av YouTube filmene vi har laget
@@ -119,7 +144,7 @@ function MiljoScreen(props) {
           </TouchableOpacity>
         </View>
 
-        <Footer />
+        <FooterTeacher />
       </ScrollView>
     </>
   );
@@ -134,6 +159,15 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 250,
     resizeMode: "cover"
+  },
+  headline: {
+    marginHorizontal: 10,
+    marginTop: 10,
+
+    fontSize: 25,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 1
   },
   headline: {
     fontSize: 25,
@@ -177,9 +211,9 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "500",
     marginBottom: 2,
-    color: colors.secondary,
+    color: colors.primary,
     fontStyle: "italic"
   }
 });
 
-export default MiljoScreen;
+export default MiljoScreenTeacher;

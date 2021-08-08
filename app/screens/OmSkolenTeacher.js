@@ -1,11 +1,10 @@
 import React from "react";
-import { View, StyleSheet, Text, ScrollView, Image } from "react-native";
+import { View, StyleSheet, ScrollView, Image } from "react-native";
 
 import * as Linking from "expo-linking";
 
-import AppButton from "../components/AppButton";
 import colors from "../config/colors";
-
+import FooterTeacher from "../components/FooterTeacher";
 import Servicetorget from "../components/Servicetorget";
 import Studieverksted from "../components/Studieverksted";
 import Kantine from "../components/Kantine";
@@ -14,26 +13,22 @@ import Elevrad from "../components/Elevrad";
 import YtButton from "../components/YtButton";
 import AppText from "../components/AppText";
 import InfoButton from "../components/InfoButton";
-import FooterTeacher from "../components/FooterTeacher";
+import GenerellButton from "../components/GenerellButton";
 
 function OmSkolenTeacher({ navigation }) {
   return (
     <>
       <ScrollView style={{ backgroundColor: colors.primaryLight }}>
         <YtButton />
+        <AppText style={styles.headline}>
+          Om Kvadraturen{"\n"}Vidregående Skole
+        </AppText>
+        <Image
+          style={styles.Line}
+          source={require("../assets/LineGreen.png")}
+        />
         <View style={styles.container}>
-          <Image
-            style={styles.Line}
-            source={require("../assets/LineGreen.png")}
-          />
-          <AppText style={styles.headline}>
-            Kart over skolens byggninger
-          </AppText>
-          <Image
-            style={styles.map}
-            source={require("../assets/skolekart.png")}
-          />
-          <AppText style={styles.headline}>
+          <AppText style={styles.headlinedesc}>
             👇 Klikk for å lese om skolen
           </AppText>
 
@@ -41,13 +36,29 @@ function OmSkolenTeacher({ navigation }) {
           <Kantine />
           <Studieverksted />
           <Elevrad />
-
+          <GenerellButton />
           <InfoButton
             color="secondary"
-            title="Utdannings Tilbud"
+            title="Utdannings Tilbud ↗️"
             onPress={() => {
               Linking.openURL("https://kvadraturen.vgs.no/utdanningstilbud/");
             }}
+          />
+          <Image
+            style={styles.Line}
+            source={require("../assets/LineGreen.png")}
+          />
+          <AppText style={styles.headline}>
+            Kart over skolens byggninger
+          </AppText>
+        </View>
+        <Image style={styles.map} source={require("../assets/skolekart.png")} />
+
+        <View style={styles.container}>
+          <AppText style={styles.headline}>Timeplan</AppText>
+          <Image
+            style={styles.timeplan}
+            source={require("../assets/timeplan.png")}
           />
         </View>
         <FooterTeacher />
@@ -63,7 +74,18 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   headline: {
-    fontSize: 25
+    marginHorizontal: 10,
+    marginTop: 10,
+
+    fontSize: 25,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 1
+  },
+  headlinedesc: {
+    fontSize: 22,
+    margin: 5,
+    fontWeight: "500"
   },
   text: {
     marginTop: 20,
@@ -78,16 +100,28 @@ const styles = StyleSheet.create({
   map: {
     flex: 1,
     width: "100%",
-    height: 200,
-    borderRadius: 25,
-    marginBottom: 20
+    height: 250,
+    resizeMode: "cover",
+    marginBottom: 5
   },
   Line: {
     flex: 1,
     width: "100%",
-    height: 80,
+    height: 50,
     marginBottom: 10,
+    marginTop: 10,
     resizeMode: "contain"
+  },
+  headerText: {
+    fontSize: 18,
+    margin: 10
+  },
+  timeplan: {
+    flex: 1,
+    width: "100%",
+    height: 400,
+    resizeMode: "contain",
+    marginBottom: 5
   }
 });
 

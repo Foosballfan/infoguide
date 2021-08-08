@@ -29,12 +29,12 @@ function Festival(props) {
           <AppText style={styles.infoText}>
             Kvadraturen videregående skole skal igjen arrangere den flotte
             oppstartsfestivalen, som en skikkelig kick off på skoleåret
-            2021/2022. Vi har samlet både lokale og nasjonale artister for å
-            sette standarden på et givende år, fullt av samhold og engasjement.
-            Det blir konserter, underholdning, sommeridyll og mange vennlige
-            fjes som ønsker deg velkommen til en ny tid på kvadda. Vi kan love
-            deg at denne festivalen ikke er noe du vil gå glipp av, så vi ses
-            fredag 20. august mellom 12:00-15:00 i nydelige bendiksbukta!
+            2021/2022. Vi har samlet nasjonale artister for å sette standarden
+            på et givende år, fullt av samhold og engasjement. Det blir
+            konserter, underholdning, sommeridyll og mange vennlige fjes som
+            ønsker deg velkommen til en ny tid på kvadda. Vi kan love deg at
+            denne festivalen ikke er noe du vil gå glipp av, så vi ses fredag
+            20. august mellom 12:00-15:00 i nydelige bendiksbukta!
           </AppText>
           <View style={styles.row}>
             <TouchableOpacity

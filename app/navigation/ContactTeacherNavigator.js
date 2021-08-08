@@ -5,8 +5,9 @@ import { createStackNavigator } from "@react-navigation/stack";
 import colors from "../config/colors";
 
 import KontaktScreenTeacher from "../screens/KontaktScreenTeacher";
-import MiljoScreen from "../screens/MiljoScreen";
+
 import Ledelsen from "../screens/Ledelsen";
+import MiljoScreenTeacher from "../screens/MiljoTeamTeacher";
 
 const Stack = createStackNavigator();
 
@@ -30,10 +31,10 @@ const ContactTeacherNavigator = () => (
       }}
     />
     <Stack.Screen
-      name="MiljoScreen"
-      component={MiljoScreen}
+      name="MiljoScreenTeacher"
+      component={MiljoScreenTeacher}
       options={{
-        title: "MILJØ",
+        title: "MILJØTEAM",
         headerStyle: {
           backgroundColor: colors.primary
         },

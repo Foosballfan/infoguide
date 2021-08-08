@@ -11,7 +11,7 @@ import * as Linking from "expo-linking";
 import AppText from "../components/AppText";
 import colors from "../config/colors";
 import Footer from "../components/Footer";
-import RektorButton from "../components/RektorButton";
+
 import InfoButton from "../components/InfoButton";
 
 function KontaktScreen({ navigation }) {
@@ -56,6 +56,16 @@ function KontaktScreen({ navigation }) {
           />
           <InfoButton
             color="secondary"
+            title="Skolehelsetjenesten"
+            onPress={() => navigation.navigate("HelseScreen")}
+          />
+          <InfoButton
+            color="secondary"
+            title="Miljøteam"
+            onPress={() => navigation.navigate("MiljoScreen")}
+          />
+          <InfoButton
+            color="secondary"
             title="rådgivere ↗️"
             onPress={() =>
               Linking.openURL(
@@ -63,15 +73,7 @@ function KontaktScreen({ navigation }) {
               )
             }
           />
-          <InfoButton
-            color="secondary"
-            title="Skolehelsetjenesten ↗️"
-            onPress={() =>
-              Linking.openURL(
-                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/skolehelsetjenesten/"
-              )
-            }
-          />
+
           <InfoButton
             color="secondary"
             title="IT-Avdelingen ↗️"
@@ -80,11 +82,6 @@ function KontaktScreen({ navigation }) {
                 "https://kvadraturen.vgs.no/for-elever/skolehverdag/ikt/"
               )
             }
-          />
-          <InfoButton
-            color="secondary"
-            title="Miljøteam"
-            onPress={() => navigation.navigate("MiljoScreen")}
           />
         </View>
         <Footer />
@@ -100,8 +97,10 @@ const styles = StyleSheet.create({
   },
   headline: {
     fontSize: 25,
-    fontWeight: "500",
-    marginBottom: 15
+    fontWeight: "700",
+    marginBottom: 15,
+    textTransform: "uppercase",
+    letterSpacing: 1
   },
   cover: {
     width: "100%",

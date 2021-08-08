@@ -52,9 +52,10 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start"
   },
   headerText: {
-    fontSize: 18,
+    fontSize: 20,
     margin: 10
   },
+
   image: {
     width: 300,
     height: 200,

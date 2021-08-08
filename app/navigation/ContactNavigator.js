@@ -7,6 +7,7 @@ import colors from "../config/colors";
 import KontaktScreen from "../screens/KontaktScreen";
 import MiljoScreen from "../screens/MiljoScreen";
 import LedelsenStudent from "../screens/LedelsenStudent";
+import HelseScreen from "../screens/HelseScreen";
 
 const Stack = createStackNavigator();
 
@@ -61,10 +62,23 @@ const ContactNavigator = () => (
         headerTintColor: colors.white
       }}
     />
+    <Stack.Screen
+      name="HelseScreen"
+      component={HelseScreen}
+      options={{
+        title: "HELSE",
+        headerStyle: {
+          backgroundColor: colors.secondary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
   </Stack.Navigator>
 );
-const styles = StyleSheet.create({
-  container: {}
-});
 
 export default ContactNavigator;

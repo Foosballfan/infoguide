@@ -117,9 +117,11 @@ const styles = StyleSheet.create({
     resizeMode: "cover"
   },
   headline: {
-    fontSize: 30,
-    fontWeight: "500",
-    marginBottom: 15
+    fontSize: 25,
+    fontWeight: "700",
+    marginBottom: 15,
+    textTransform: "uppercase",
+    letterSpacing: 1
   },
   headlineDesc: {
     fontSize: 23,

@@ -20,7 +20,7 @@ function Facts(props) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <Image style={styles.cover} source={require("../assets/kvadda.png")} />
         <View style={styles.container}>
-          <AppText style={styles.header}>Diverse fakta om skolen </AppText>
+          <AppText style={styles.headline}>Diverse fakta om skolen </AppText>
           <AppText style={styles.headerText}>
             🎒 Oppmøte første skoledag, torsdag 19.august.{"\n"}Kl. 09.00 VG1{" "}
             {"\n"}Kl. 10.00 VG2 {"\n"}Kl. 11.00 VG3
@@ -103,9 +103,11 @@ const styles = StyleSheet.create({
     height: 200,
     resizeMode: "cover"
   },
-  header: {
+  headline: {
     fontSize: 25,
-    fontWeight: "500",
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 1,
     margin: 10
   },
   text: {

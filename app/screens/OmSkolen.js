@@ -66,10 +66,13 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   headline: {
-    fontSize: 30,
     marginHorizontal: 10,
     marginTop: 10,
-    fontWeight: "500"
+
+    fontSize: 25,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 1
   },
   headlinedesc: {
     fontSize: 22,

@@ -15,6 +15,7 @@ import AppText from "../components/AppText";
 import colors from "../config/colors";
 import Footer from "../components/Footer";
 import GreteButton from "../components/GreteButton";
+import MiljoScreenTeacher from "./MiljoTeamTeacher";
 
 function HelseScreen(props) {
   return (
@@ -22,7 +23,7 @@ function HelseScreen(props) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <Image style={styles.cover} source={require("../assets/snakke.jpg")} />
         <View style={styles.container}>
-          <AppText style={styles.header}>Skolehelsetjenesten</AppText>
+          <AppText style={styles.headline}>Skolehelsetjenesten</AppText>
           <AppText style={styles.text}>
             Skolehelsetjenesten er et åpent tilbud til alle elevene ved skolen
             og består av to helsesykepleiere.
@@ -214,6 +215,13 @@ const styles = StyleSheet.create({
   container: {
     margin: 10,
     justifyContent: "flex-start"
+  },
+  headline: {
+    fontSize: 25,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 1,
+    marginBottom: 10
   },
 
   cover: {

@@ -5,10 +5,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import colors from "../config/colors";
 import TeacherWelcomeScreen from "../screens/TeacherWelcomeScreen";
 import Festival from "../screens/Festival";
-import StudentTimeline from "../screens/StudentTimeline";
-import MiljoScreen from "../screens/MiljoScreen";
+import MiljoScreenTeacher from "../screens/MiljoTeamTeacher";
 import TeachersTimeframe from "../screens/TeachersTimeframe";
 import TeachersOverView from "../screens/TeachersOverView";
+import SosialeAktiviteter from "../screens/SosialeAktiviteter";
 
 const Stack = createStackNavigator();
 
@@ -67,6 +67,38 @@ const HomeTeacherNavigator = () => (
       component={TeachersOverView}
       options={{
         title: "HVEM GJØR HVA",
+        headerStyle: {
+          backgroundColor: colors.primary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 1
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="MiljoScreenTeacher"
+      component={MiljoScreenTeacher}
+      options={{
+        title: "MILJØTEAM",
+        headerStyle: {
+          backgroundColor: colors.primary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 1
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="SosialeAktiviteter"
+      component={SosialeAktiviteter}
+      options={{
+        title: "SOSIALT",
         headerStyle: {
           backgroundColor: colors.primary
         },

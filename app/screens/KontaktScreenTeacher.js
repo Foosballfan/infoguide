@@ -11,7 +11,7 @@ import * as Linking from "expo-linking";
 import AppText from "../components/AppText";
 import colors from "../config/colors";
 import FooterTeacher from "../components/FooterTeacher";
-import RektorButton from "../components/RektorButton";
+
 import InfoButton from "../components/InfoButton";
 
 function KontaktScreenTeacher({ navigation }) {
@@ -53,7 +53,11 @@ function KontaktScreenTeacher({ navigation }) {
             title="ledelsen"
             onPress={() => navigation.navigate("Ledelsen")}
           />
-
+          <InfoButton
+            color="primary"
+            title="Miljøteam"
+            onPress={() => navigation.navigate("MiljoScreenTeacher")}
+          />
           <InfoButton
             color="primary"
             title="rådgivere ↗️"
@@ -81,11 +85,6 @@ function KontaktScreenTeacher({ navigation }) {
               )
             }
           />
-          <InfoButton
-            color="primary"
-            title="Miljøteam"
-            onPress={() => navigation.navigate("MiljoScreen")}
-          />
         </View>
         <FooterTeacher />
       </ScrollView>
@@ -100,8 +99,10 @@ const styles = StyleSheet.create({
   },
   headline: {
     fontSize: 25,
-    fontWeight: "500",
-    marginBottom: 15
+    fontWeight: "700",
+    marginBottom: 15,
+    textTransform: "uppercase",
+    letterSpacing: 1
   },
   cover: {
     width: "100%",

@@ -21,7 +21,10 @@ function HelseScreen(props) {
   return (
     <>
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
-        <Image style={styles.cover} source={require("../assets/snakke.jpg")} />
+        <Image
+          style={styles.cover}
+          source={require("../assets/Helsesykepleiere.jpg")}
+        />
         <View style={styles.container}>
           <AppText style={styles.headline}>Skolehelsetjenesten</AppText>
           <AppText style={styles.text}>

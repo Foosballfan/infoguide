@@ -11,13 +11,13 @@ function LedelsenStudent(props) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <Image
           style={styles.cover}
-          source={require("../assets/Ledelsen.jpg")}
+          source={require("../assets/Ledelsen1.jpg")}
         />
 
         <View style={styles.row}>
           <Image
             style={styles.rowImage}
-            source={require("../assets/ArildKnutsen.jpg")}
+            source={require("../assets/Morten-rektor.jpg")}
           />
           <View style={styles.rowText}>
             <AppText style={styles.name}>Morten Torkelsen</AppText>
@@ -172,6 +172,42 @@ function LedelsenStudent(props) {
             <AppText style={styles.tlf}>Tlf. 478 87 230</AppText>
             <AppText style={styles.email}>
               Leif.Kare.Spartveit@{"\n"}kvadraturen.vgs.no
+            </AppText>
+          </View>
+        </View>
+
+        <View style={styles.row}>
+          <View style={styles.rowText}>
+            <AppText style={styles.name}>Tone Ullestad</AppText>
+            <AppText style={styles.pos}>Avdelingsleder</AppText>
+            <AppText style={styles.underPos}>
+              - Helse- og oppvekstfag{"\n"}- Vg2/Vg3
+            </AppText>
+            <AppText style={styles.tlf}>Tlf. 945 26 750</AppText>
+            <AppText style={styles.email}>
+              Tone.ullestad@{"\n"}kvadraturen.vgs.no
+            </AppText>
+          </View>
+          <Image
+            style={styles.rowImage}
+            source={require("../assets/ToneUllestad.jpg")}
+          />
+        </View>
+
+        <View style={styles.row}>
+          <Image
+            style={styles.rowImage}
+            source={require("../assets/Frank-Bruheim.jpg")}
+          />
+          <View style={styles.rowText}>
+            <AppText style={styles.name}>Frank Bruheim</AppText>
+            <AppText style={styles.pos}>Avdelingsleder</AppText>
+            <AppText style={styles.underPos}>
+              - Idrett- og kroppsøving {"\n"}- Kurs virksomhet
+            </AppText>
+            <AppText style={styles.tlf}>Tlf. 905 49 286</AppText>
+            <AppText style={styles.email}>
+              Frank.Bruheim@{"\n"}kvadraturen.vgs.no
             </AppText>
           </View>
         </View>

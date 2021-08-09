@@ -77,6 +77,7 @@ function Festival(props) {
         <Image style={styles.imageMap} source={require("../assets/kart.jpg")} />
         <View>
           <AppText style={styles.descText}> Sponsorer</AppText>
+
           <View style={styles.spons}>
             <Image
               style={styles.image}
@@ -94,28 +95,28 @@ function Festival(props) {
             />
             <Image
               style={styles.image}
-              source={require("../assets/Fagopplearingsor.jpeg")}
+              source={require("../assets/maritim-logo.png")}
             />
           </View>
           <View style={styles.spons}>
             <Image
               style={styles.image}
-              source={require("../assets/otek.png")}
+              source={require("../assets/OTEKlogo.png")}
+            />
+            <Image
+              style={styles.image}
+              source={require("../assets/fagOpplaering.png")}
+            />
+          </View>
+          <View style={styles.spons}>
+            <Image
+              style={styles.image}
+              source={require("../assets/elofsor.jpg")}
             />
             <Image
               style={styles.image}
               source={require("../assets/opplaeringskontoret.jpg")}
             />
-            <View style={styles.spons}>
-              <Image
-                style={styles.image}
-                source={require("../assets/maritim.png")}
-              />
-              <Image
-                style={styles.image}
-                source={require("../assets/Fagopplearingsor.jpeg")}
-              />
-            </View>
           </View>
         </View>
 

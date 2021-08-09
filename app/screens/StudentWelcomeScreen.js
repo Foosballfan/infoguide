@@ -69,7 +69,7 @@ function StudentWelcomeScreen({ onPress, navigation }) {
             <View style={styles.card}>
               <Image
                 style={styles.Cardimage}
-                source={require("../assets/snakke.jpg")}
+                source={require("../assets/Helsesykepleiere.jpg")}
               />
 
               <AppText style={styles.title}>

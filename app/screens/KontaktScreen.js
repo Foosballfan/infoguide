@@ -56,16 +56,6 @@ function KontaktScreen({ navigation }) {
           />
           <InfoButton
             color="secondary"
-            title="Skolehelsetjenesten"
-            onPress={() => navigation.navigate("HelseScreen")}
-          />
-          <InfoButton
-            color="secondary"
-            title="Miljøteam"
-            onPress={() => navigation.navigate("MiljoScreen")}
-          />
-          <InfoButton
-            color="secondary"
             title="rådgivere ↗️"
             onPress={() =>
               Linking.openURL(
@@ -73,7 +63,6 @@ function KontaktScreen({ navigation }) {
               )
             }
           />
-
           <InfoButton
             color="secondary"
             title="IT-Avdelingen ↗️"
@@ -82,6 +71,16 @@ function KontaktScreen({ navigation }) {
                 "https://kvadraturen.vgs.no/for-elever/skolehverdag/ikt/"
               )
             }
+          />
+          <InfoButton
+            color="secondary"
+            title="Skolehelsetjenesten"
+            onPress={() => navigation.navigate("HelseScreen")}
+          />
+          <InfoButton
+            color="secondary"
+            title="Miljøteam"
+            onPress={() => navigation.navigate("MiljoScreen")}
           />
         </View>
         <Footer />

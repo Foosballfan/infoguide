@@ -21,9 +21,7 @@ export default class Example extends Component {
       },
       {
         time: "22.08",
-        title: "⚽️ Aktivitetsdag for vg2 elever på Odderøya",
-        description:
-          "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net."
+        title: "⚽️ Aktivitetsdag for vg2 elever på Odderøya"
       },
       {
         time: "22.08",
@@ -33,15 +31,7 @@ export default class Example extends Component {
       },
       {
         time: "23.08",
-        title: "⚽️ Aktivitetsdag for vg1 elever på Odderøya",
-        description:
-          "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net."
-      },
-      {
-        time: "24.08",
-        title: "💻 PC utlevering for vg1 elever.",
-        description:
-          "Vg1 elever kan hente PC i Studidevæerkstedet 24 og 25 august. "
+        title: "⚽️ Aktivitetsdag for vg1 elever på Odderøya"
       },
 
       {

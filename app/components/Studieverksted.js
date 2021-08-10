@@ -33,7 +33,7 @@ export default class Studieverksted extends Component {
             <>
               <Image
                 style={styles.image}
-                source={require("../assets/studieverksted.jpg")}
+                source={require("../assets/studieverksted1.jpg")}
               />
               <AppText style={styles.headerText}>
                 Studieverkstedet på Kvadraturen vgs er sentralt plassert i
@@ -53,13 +53,13 @@ export default class Studieverksted extends Component {
                 bøker og blader, viser vi deg hvordan. Her kan du også låne PC,
                 PC- lader og kalkulator på dagslån. Spør oss om du lurer på noe!
                 {"\n"}
-                {"\n"}Bibliotekar på Studieverkstedet:{"\n"}Åse Helleren E-post:
+                {"\n"}Bibliotekar på Studieverkstedet:{"\n"} {"\n"}Åse Helleren
+                {"\n"}
+                E-post:
                 {"\n"}Ase.Helleren@kvadraturen.vgs.no{"\n"}Tlf: 92 42 06 36 / 38
-                07 73 95 {"\n"}Søk etter bøker og annet utlånsmateriell kan du
-                finne på Studieverkstedet sine egne sider for biblioteket:{"\n"}
-                Avtale ang utlån av lærebøker og andre bøker finner du
-                her Reglement for utlån lærebøker.{"\n"}Tips og lenker til
-                digitale lærebøker og annen digital info:
+                07 73 95 {"\n"}
+                {"\n"}Søk etter bøker og annet utlånsmateriell kan du finne på
+                Studieverkstedet sine egne sider for biblioteket:{"\n"} 
               </AppText>
               <TouchableOpacity
                 style={styles.Links}

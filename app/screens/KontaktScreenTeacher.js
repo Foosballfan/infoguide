@@ -55,15 +55,19 @@ function KontaktScreenTeacher({ navigation }) {
           />
           <InfoButton
             color="primary"
-            title="Miljøteam"
-            onPress={() => navigation.navigate("MiljoScreenTeacher")}
-          />
-          <InfoButton
-            color="primary"
             title="rådgivere ↗️"
             onPress={() =>
               Linking.openURL(
                 "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/radgivere/"
+              )
+            }
+          />
+          <InfoButton
+            color="primary"
+            title="IT-Avdelingen ↗️"
+            onPress={() =>
+              Linking.openURL(
+                "https://kvadraturen.vgs.no/for-elever/skolehverdag/ikt/"
               )
             }
           />
@@ -78,12 +82,8 @@ function KontaktScreenTeacher({ navigation }) {
           />
           <InfoButton
             color="primary"
-            title="IT-Avdelingen ↗️"
-            onPress={() =>
-              Linking.openURL(
-                "https://kvadraturen.vgs.no/for-elever/skolehverdag/ikt/"
-              )
-            }
+            title="Miljøteam"
+            onPress={() => navigation.navigate("MiljoScreenTeacher")}
           />
         </View>
         <FooterTeacher />

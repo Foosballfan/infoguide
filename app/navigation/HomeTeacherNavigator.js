@@ -50,7 +50,7 @@ const HomeTeacherNavigator = () => (
       name="TeachersTimeframe"
       component={TeachersTimeframe}
       options={{
-        title: "TIDSHJUL",
+        title: "ÅRSHJUL",
         headerStyle: {
           backgroundColor: colors.primary
         },

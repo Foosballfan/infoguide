@@ -17,11 +17,9 @@ function StudentWelcomeScreen({ onPress, navigation }) {
   return (
     <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
       <View style={styles.container}>
-        <AppText style={styles.welcome}>Velkommen til</AppText>
-        <AppText style={[styles.welcome, styles.italic]}>Kvadraturen</AppText>
-        <AppText style={[styles.welcome, styles.underline]}>
-          Vidregående skole
-        </AppText>
+        <AppText style={styles.welcome}>Velkommen</AppText>
+        <AppText style={[styles.welcome, styles.italic]}>elev</AppText>
+
         <Image style={styles.Line} source={require("../assets/LineThin.png")} />
 
         <View style={styles.festival}>
@@ -208,7 +206,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginHorizontal: 5
   },
-  italic: { fontStyle: "italic", color: colors.secondary }
+  italic: { fontStyle: "italic", color: colors.secondary },
+  underline: { fontSize: 28 }
 });
 
 export default StudentWelcomeScreen;

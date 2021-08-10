@@ -25,7 +25,7 @@ function MiljoScreenTeacher(props) {
         <View style={styles.container}>
           <AppText style={styles.headline}>Miljøteamet ❤️</AppText>
           <AppText style={styles.text}>
-            Elever kan også henvises til miljøteamet. Dette gjelder også for
+            Elever kan henvises til miljøteamet. Dette gjelder også for
             eventuell ekstra oppfølging av enkeltelever, hovedsakelig sosialt,
             men også faglig hvis det er behov. I tillegg har miljøteamet ansvar
             for sosiale medier, så vi oppfordrer til tett dialog med miljøteamet
@@ -36,7 +36,7 @@ function MiljoScreenTeacher(props) {
             tips oss en gang for mye enn en gang for lite. Vi jobber for å skape
             en inkluderende hverdag for elevene, der de føler seg sett og hørt.
             Kom gjerne innom oss på kontoret som ligger inne på studieverkstedet
-            eller huk tak i oss! For sosiale media henvendelser - kontakt:
+            eller huk tak i oss! For sosiale media henvendelser - kontakt:{"\n"}
             <TouchableOpacity
               onPress={() =>
                 Linking.openURL("mailto:kim.marius.ask@kvadraturen.vgs.no")
@@ -46,9 +46,9 @@ function MiljoScreenTeacher(props) {
                 kim.marius.ask@kvadraturen.vgs.no
               </AppText>
             </TouchableOpacity>
-            Vi har også en miljøkoordinator, som jobber på tvers av Kvadraturen
-            vgs, KKG vgs og Tangen vgs som kan kontaktes i sammenheng med
-            utsatte enkeltelever:{" "}
+            {"\n"}Vi har også en miljøkoordinator, som jobber på tvers av
+            Kvadraturen vgs, KKG vgs og Tangen vgs som kan kontaktes i
+            sammenheng med utsatte enkeltelever:{" "}
             <TouchableOpacity
               onPress={() =>
                 Linking.openURL("mailto:ruben.kleiven@kvadraturen.vgs.no")

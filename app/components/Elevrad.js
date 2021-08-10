@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
+
+import * as Linking from "expo-linking";
 
 import AppText from "./AppText";
 import InfoButton from "./InfoButton";
@@ -41,6 +43,19 @@ export default class Elevrad extends Component {
                 elevgruppas representant i avdelingselevråd og kan fremme alle
                 de sakene klassen ønsker.
               </AppText>
+              <TouchableOpacity
+                onPress={() => {
+                  Linking.openURL(
+                    "https://kvadraturen.vgs.no/aktuelt/elevradsleder-om-pandemien.31700.aspx"
+                  );
+                }}
+              >
+                <Image
+                  style={{ width: 300, height: 300, resizeMode: "contain" }}
+                  source={require("../assets/elevradSak.jpg")}
+                />
+                <AppText>Les saken : Elevrådsleder om pandemien</AppText>
+              </TouchableOpacity>
             </>
           ) : null}
         </View>

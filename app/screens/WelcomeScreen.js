@@ -3,6 +3,7 @@ import { View, StyleSheet, ImageBackground, Image, Text } from "react-native";
 
 import colors from "../config/colors";
 import AppButton from "../components/AppButton";
+import AppText from "../components/AppText";
 
 function WelcomeScreen({ navigation }) {
   return (
@@ -13,7 +14,9 @@ function WelcomeScreen({ navigation }) {
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo2.png")} />
-        <Text style={styles.tagline}>Kvadraturens Guide</Text>
+        <AppText style={styles.tagline}>Velkommen til </AppText>
+        <AppText style={[styles.tagline, styles.italic]}>Kvadraturen</AppText>
+        <AppText style={styles.tagline}>videregående skole</AppText>
       </View>
       <View style={styles.buttonsContainer}>
         <AppButton
@@ -43,26 +46,27 @@ const styles = StyleSheet.create({
   },
   logo: {
     width: 170,
-    height: 150
+    height: 150,
+    marginBottom: 15
   },
   logoContainer: {
     width: 300,
     height: 300,
     borderRadius: 10,
     position: "absolute",
-    top: 70,
+    top: 80,
     alignItems: "center",
     justifyContent: "center"
   },
   tagline: {
     color: colors.black,
-    fontSize: 20,
-    fontWeight: "600",
-    paddingVertical: 20,
-    fontFamily: "Helvetica",
+    fontSize: 22,
+    fontWeight: "800",
+    paddingVertical: 5,
     textTransform: "uppercase",
     letterSpacing: 2
-  }
+  },
+  italic: { fontStyle: "italic", color: colors.secondary, fontSize: 30 }
 });
 
 export default WelcomeScreen;

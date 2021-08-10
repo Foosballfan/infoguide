@@ -11,7 +11,7 @@ function LedelsenStudent(props) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <Image
           style={styles.cover}
-          source={require("../assets/Ledelsen1.jpg")}
+          source={require("../assets/ledelsen3.jpg")}
         />
 
         <View style={styles.row}>
@@ -224,7 +224,7 @@ const styles = StyleSheet.create({
   },
   cover: {
     width: "100%",
-    height: 300,
+    height: 280,
     resizeMode: "cover"
   },
   headline: {

@@ -20,7 +20,7 @@ function SosialeAktiviteter(props) {
           />
 
           <AppText style={styles.text}>
-            Det er gøy å være ansatt hos Kvadraturen vgs. Vi vin arrangere
+            Det er gøy å være ansatt hos Kvadraturen vgs. Vi vil arrangere
             diverse sosiale aktiviterer for våre ansatte.
           </AppText>
         </View>

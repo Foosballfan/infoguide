@@ -18,7 +18,7 @@ function YtButton() {
         />
       </TouchableOpacity>
       <AppText style={styles.text}>
-        🎬 Bli kjent på skolen gjennom Kvadraturen vgs's YouTube video
+        🎬 Se video for å bli kjent med skolen
       </AppText>
     </View>
   );

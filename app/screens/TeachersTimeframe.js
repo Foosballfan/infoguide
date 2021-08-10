@@ -42,12 +42,6 @@ export default class TeachersTimeframe extends Component {
         description:
           "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net."
       },
-      {
-        time: "24.08",
-        title: "💻 PC utlevering for vg1 elever.",
-        description:
-          "Vg1 elever kan hente PC i Studidevæerkstedet 24 og 25 august. "
-      },
 
       {
         time: "22.08",

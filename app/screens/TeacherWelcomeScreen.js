@@ -17,11 +17,9 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
   return (
     <ScrollView style={{ backgroundColor: colors.primaryLight }}>
       <View style={styles.container}>
-        <AppText style={styles.welcome}>Velkommen til</AppText>
-        <AppText style={[styles.welcome, styles.italic]}>Kvadraturen</AppText>
-        <AppText style={[styles.welcome, styles.underline]}>
-          Vidregående skole
-        </AppText>
+        <AppText style={styles.welcome}>Velkommen</AppText>
+        <AppText style={[styles.welcome, styles.italic]}>ansatt</AppText>
+
         <Image
           style={styles.Line}
           source={require("../assets/LineGreen.png")}
@@ -45,7 +43,7 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
                 source={require("../assets/calendar.png")}
               />
 
-              <AppText style={styles.title}>Tidshjul</AppText>
+              <AppText style={styles.title}>Årshjul</AppText>
               <AppText numberOfLines={3} style={styles.subTitle}>
                 Det er mye som skjer den første tiden på skolen, se oversikten
                 her.
@@ -194,7 +192,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginHorizontal: 5
   },
-  italic: { fontStyle: "italic", color: colors.primary }
+  italic: { fontStyle: "italic", color: colors.primary },
+  underline: { fontSize: 28 }
 });
 
 export default TeacherwelcomeScreen;

@@ -24,13 +24,17 @@ function Artists(props) {
       </View>
 
       <View style={styles.container}>
-        <Image style={styles.image} source={require("../assets/kjartan.jpg")} />
-        <AppText style={styles.AppText}>KJARTAN LAURITZEN </AppText>
-        <AppText style={styles.copyRightAppText}>
-          Kjartan Lauritzen på Kastellscenen, Slottsfjell 2017. Foto: Tom
-          Øverlie, NRK P3
+        <Image style={styles.image} source={require("../assets/torine.jpg")} />
+        <AppText style={styles.AppText}>TORINE </AppText>
+        <AppText style={styles.copyRightAppText}>Universal Music AS</AppText>
+        <Image
+          style={styles.image}
+          source={require("../assets/PhilipEmilio.png")}
+        />
+        <AppText style={styles.AppTextRight}>PHILIP EMILIO</AppText>
+        <AppText style={styles.copyRightAppTextRightAkam}>
+          Foto: Akam1k3
         </AppText>
-        <Image style={styles.image} source={require("../assets/fest.jpg")} />
       </View>
     </>
   );
@@ -66,7 +70,7 @@ const styles = StyleSheet.create({
   copyRightAppText: {
     position: "absolute",
     color: "gray",
-    fontSize: 5.2,
+    fontSize: 6,
     bottom: 0,
     left: 0
   },
@@ -74,6 +78,13 @@ const styles = StyleSheet.create({
     position: "absolute",
     color: "gray",
     fontSize: 4,
+    bottom: 0,
+    right: 0
+  },
+  copyRightAppTextRightAkam: {
+    position: "absolute",
+    color: "gray",
+    fontSize: 6,
     bottom: 0,
     right: 0
   },

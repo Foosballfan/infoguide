@@ -58,7 +58,7 @@ function OmSkolenTeacher({ navigation }) {
           <AppText style={styles.headline}>Timeplan</AppText>
           <Image
             style={styles.timeplan}
-            source={require("../assets/timeplan.png")}
+            source={require("../assets/timeplangronn.jpg")}
           />
         </View>
         <FooterTeacher />

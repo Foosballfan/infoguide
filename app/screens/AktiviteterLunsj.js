@@ -19,13 +19,10 @@ function AktiviteterLunsj(props) {
           />
 
           <AppText style={styles.text}>
-            Miljøteamet vil arrangere morsomme aktiviteter i lunsjen.
+            Miljøteamet vil stå for ulike aktiviteter i lunsjen gjennom dagene
+            som kommer. Mer info om dette kommer på skjermene som henger rundt
+            på skolen, så følg med – det blir gøy!
           </AppText>
-          <Unorderedlist>
-            <AppText style={styles.Points}>
-              27.august – Makkerlunsj.{"\n"}Makkerpar spiser lunsj sammen.
-            </AppText>
-          </Unorderedlist>
         </View>
         <Footer />
       </ScrollView>

@@ -25,10 +25,10 @@ export default class TeachersTimeframe extends Component {
           "Vi kickstarter skoleåret med festival fra kl 12:00 - 15:00 i Bendiksbukta! Du finner all informasjonen du trenger på festivalsiden."
       },
       {
-        time: "22.08",
-        title: "⚽️ Aktivitetsdag for vg2 elever på Odderøya",
+        time: "23.08",
+        title: "⚽️ Aktivitetsdag for VG2 + stho og 1id elever på Odderøya",
         description:
-          "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net."
+          "«Bli kjent dag»/Aktivitetsdag. Møt minst 15 min før elevene på aktivitetsdagen. Før dere møter elevene, må dere hente en konvolutt merket med klassenavnet i servicetorget. Der finner dere kart hvor de ulike postene er avmerket, kartet ligger også digitalt på teams under aktivitetsdager. Husk å følge «postruten» i den rekkefølge det står på arket. I konvolutten ligger det også et poengark, den totale poengsummen skal leveres digitalt på teams (Kvadraturen vgs > kanal: oppstart skoleåret 2021-22 > oppstartsfestival > aktivitetsdager – bli kjent dager 2021 > poeng på aktivitetsdagen). Nederst på arket, finner du info som må ut til elevene. Dere kan legge denne informasjonen ut på It`s, eller på annen måte få informert elevene. Vi ønsker at dere tar kontakt med elever som av ulike årsaker ikke kan komme seg rundt, og tar dette opp med avdelingsleder. Dette er en aktivitetsdag hvor hovedfokuset er å bli kjent med elevene/hverandre, teambuilding og gleden av å bevege seg i naturen, det er derfor viktig å ikke gå glipp av det sosiale! "
       },
       {
         time: "22.08",
@@ -49,9 +49,9 @@ export default class TeachersTimeframe extends Component {
         description: "22 til 25 august skjer det fotografering av elevene"
       },
       {
-        time: "22.08",
+        time: "25.08",
         title: "🦺 HMS dager",
-        description: "HMS dager for vg1 elever"
+        description: "25 - 26 august. HMS dager for vg1 elever"
       },
       {
         time: "Uke 36",

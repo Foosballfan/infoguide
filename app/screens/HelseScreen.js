@@ -36,15 +36,11 @@ function HelseScreen(props) {
           />
           <AppText style={styles.text}>
             Du kan komme til oss med alt, vi er her for dere HVER DAG. Kom innom
-            kontoret (nummer på kontoret) eller send sms!
+            kontoret, rom nr. B109 A og B109 B. Eller send sms!
           </AppText>
           <AppText style={styles.text}>
             Du er velkommen til å ta kontakt for timebestilling på SMS eventuelt
             Drop-in. Vi følger retningslinjene for godt smittevern.
-          </AppText>
-          <AppText style={styles.text}>
-            Åpningstider for elever: Hver dag fra kl 09.00-15.00, på kontorer i
-            B-blokka (rom nr. B109 A og B109 B)
           </AppText>
         </View>
 
@@ -106,6 +102,21 @@ function HelseScreen(props) {
               </AppText>
             </TouchableOpacity>
           </View>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL(
+                "https://www.dropbox.com/s/fq5s7h5sumoxvt8/Video%2003.08.2020%2C%2010%2048%2036.mov?dl=0"
+              );
+            }}
+          >
+            <Image
+              style={styles.cover}
+              source={require("../assets/helsesista.jpg")}
+            />
+          </TouchableOpacity>
+          <AppText>
+            Se Helsesista sine gode råd for et fint og motiverende skoleår her!
+          </AppText>
           <Image
             style={styles.Line}
             source={require("../assets/LineThin.png")}

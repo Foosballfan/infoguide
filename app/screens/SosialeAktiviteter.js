@@ -2,9 +2,8 @@ import React from "react";
 import { View, StyleSheet, ScrollView, Image } from "react-native";
 
 import colors from "../config/colors";
-
 import AppText from "../components/AppText";
-
+import Unorderedlist from "react-native-unordered-list";
 import FooterTeacher from "../components/FooterTeacher";
 
 function SosialeAktiviteter(props) {
@@ -14,14 +13,18 @@ function SosialeAktiviteter(props) {
         <Image style={styles.cover} source={require("../assets/yoga.jpg")} />
         <View style={styles.container}>
           <AppText style={styles.headline}>Sosiale Aktiviteter</AppText>
+
           <Image
             style={styles.Line}
             source={require("../assets/LineGreen.png")}
           />
-
           <AppText style={styles.text}>
-            Det er gøy å være ansatt hos Kvadraturen vgs. Vi vil arrangere
-            diverse sosiale aktiviterer for våre ansatte.
+            Det er viktig å trives på jobben. Både med arbeidsoppgaver og med
+            kollegaene. I tillegg til julebord, juletrefest og sommerfest, har
+            vi mange forskjellige aktiviteter og sosiale tilbud til skolens
+            ansatte. For eksempel: volleyball, yoga, spinning, vandretur,
+            skitur, zumba. Så når personalforeningen innkaller til møte, er det
+            lurt å delta!
           </AppText>
         </View>
         <FooterTeacher />
@@ -53,11 +56,11 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-    marginBottom: 10
+    marginBottom: 15
   },
   image: {
     width: "100%",
-    height: 100,
+    height: 200,
     resizeMode: "contain",
     marginBottom: 10
   },
@@ -72,16 +75,17 @@ const styles = StyleSheet.create({
     margin: 10,
     resizeMode: "contain"
   },
-  Points: {
-    marginBottom: 10,
-    fontWeight: "500"
-  },
+
   Line: {
     flex: 1,
     width: "100%",
     height: 50,
     resizeMode: "contain",
     marginVertical: 10
+  },
+  Points: {
+    marginBottom: 10,
+    fontWeight: "500"
   }
 });
 

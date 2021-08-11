@@ -17,6 +17,10 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
   return (
     <ScrollView style={{ backgroundColor: colors.primaryLight }}>
       <View style={styles.container}>
+        <Image
+          style={styles.Line}
+          source={require("../assets/Kvadraturen-vgs.png")}
+        />
         <AppText style={styles.welcome}>Velkommen</AppText>
         <AppText style={[styles.welcome, styles.italic]}>ansatt</AppText>
 

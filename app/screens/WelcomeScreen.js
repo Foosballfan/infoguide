@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     fontWeight: "800",
     paddingVertical: 5,
     textTransform: "uppercase",
-    letterSpacing: 2
+    letterSpacing: 1
   },
   italic: { fontStyle: "italic", color: colors.secondary, fontSize: 30 }
 });

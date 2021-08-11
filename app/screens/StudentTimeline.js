@@ -14,41 +14,48 @@ export default class Example extends Component {
         description: "Kl. 09.00 VG1 - Kl. 10.00 VG2 - Kl. 11.00 VG3 "
       },
       {
+        time: "19.08",
+        title: "💻 PC",
+        description:
+          "Skole pc til elever kommer rundt høstferien. I mellomtiden ønsker vi at de elevene som har mulighet tar med egen pc hjemmefra. "
+      },
+      {
         time: "20.08",
         title: "🎉Oppstartsfestival",
         description:
           "Vi kickstarter skoleåret med festival fra kl 12:00 - 15:00 i Bendiksbukta! Du finner all informasjonen du trenger på festivalsiden."
       },
       {
-        time: "22.08",
-        title: "⚽️ Aktivitetsdag for vg2 elever på Odderøya"
-      },
-      {
-        time: "22.08",
+        time: "23.08",
         title: "📚 Bokutlevering alle klasser",
         description:
-          "Fra 22 til 25 august kan alle trinn og klasser hente bøker på studieværkstedet"
-      },
-      {
-        time: "23.08",
-        title: "⚽️ Aktivitetsdag for vg1 elever på Odderøya"
+          "Fra 23 til 26 august kan alle trinn og klasser hente bøker på studieværkstedet"
       },
 
       {
-        time: "22.08",
+        time: "23.08",
         title: "📸 Elevfotografering alle klasser",
-        description: "22 til 25 august skjer det fotografering av elevene"
+        description: "23 til 27 august skjer det fotografering av elevene"
       },
       {
-        time: "22.08",
+        time: "25.08",
         title: "🦺 HMS dager",
-        description: "HMS dager for vg1 elever"
+        description: " 25- 26 august. HMS dager for Ho, Tiff og elektro "
+      },
+      {
+        time: "23.08",
+        title: "⚽️ Aktivitetsdag for vg2, stho og 1id elever på Odderøya",
+        description: "Aktivitetsdag beskrivelse"
+      },
+      {
+        time: "24.08",
+        title: "⚽️ Aktivitetsdag for vg1 + HT  elever på Odderøya",
+        description: "Se beskrivelse over"
       }
     ];
   }
 
   render() {
-    //'rgb(45,156,219)'
     return (
       <View style={styles.container}>
         <Timeline

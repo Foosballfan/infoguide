@@ -91,21 +91,11 @@ function Festival(props) {
           <View style={styles.spons}>
             <Image
               style={styles.image}
-              source={require("../assets/maritim.png")}
-            />
-            <Image
-              style={styles.image}
               source={require("../assets/maritim-logo.png")}
             />
-          </View>
-          <View style={styles.spons}>
             <Image
               style={styles.image}
               source={require("../assets/OTEKlogo.png")}
-            />
-            <Image
-              style={styles.image}
-              source={require("../assets/fagOpplaering.png")}
             />
           </View>
           <View style={styles.spons}>
@@ -113,6 +103,12 @@ function Festival(props) {
               style={styles.image}
               source={require("../assets/elofsor.jpg")}
             />
+            <Image
+              style={styles.image}
+              source={require("../assets/fagOpplaering.png")}
+            />
+          </View>
+          <View style={styles.spons}>
             <Image
               style={styles.image}
               source={require("../assets/opplaeringskontoret.jpg")}

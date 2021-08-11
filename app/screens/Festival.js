@@ -29,12 +29,13 @@ function Festival(props) {
           <AppText style={styles.infoText}>
             Kvadraturen videregående skole skal igjen arrangere den flotte
             oppstartsfestivalen, som en skikkelig kick off på skoleåret
-            2021/2022. Vi har samlet nasjonale artister for å sette standarden
-            på et givende år, fullt av samhold og engasjement. Det blir
-            konserter, underholdning, sommeridyll og mange vennlige fjes som
+            2021/2022. To av våre elever, Sebastian og Thomas, skal ta dere med
+            gjennom en samling av nasjonale artister for å sette standarden på
+            et givende år, fullt av samhold og engasjement. Det blir konserter,
+            underholdning, sommeridyll, grilling og mange vennlige fjes som
             ønsker deg velkommen til en ny tid på kvadda. Vi kan love deg at
-            denne festivalen ikke er noe du vil gå glipp av, så vi ses fredag
-            20. august mellom 12:00-15:00 i nydelige bendiksbukta!
+            denne festivalen ikke er noe du vil gå glipp av. Vi ses fredag 20.
+            august mellom kl 12:00 og kl 15:00 i nydelige bendiksbukta!
           </AppText>
           <View style={styles.row}>
             <TouchableOpacity
@@ -66,9 +67,7 @@ function Festival(props) {
           </View>
           <AppText style={styles.descText}> Program</AppText>
 
-          <AppText style={styles.infoText}>Kl 12:00 Philip Emilo</AppText>
-          <AppText style={styles.infoText}>Kl 13:00 Sebastian Zalo</AppText>
-          <AppText style={styles.infoText}>Kl 14:00 Iris</AppText>
+          <AppText style={styles.infoText}>Kl 12:00 - Kl 15:00</AppText>
 
           <AppText style={styles.descText}> Hvor</AppText>
           <AppText style={styles.infoText}>Bendiksbukta, Odderøya</AppText>

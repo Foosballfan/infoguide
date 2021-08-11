@@ -12,7 +12,6 @@ import * as Linking from "expo-linking";
 import AppText from "../components/AppText";
 import colors from "../config/colors";
 import Footer from "../components/Footer";
-import GreteButton from "../components/GreteButton";
 
 function MiljoScreen(props) {
   return (

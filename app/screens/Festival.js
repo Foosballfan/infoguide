@@ -66,7 +66,7 @@ function Festival(props) {
           </View>
           <AppText style={styles.descText}> Program</AppText>
 
-          <AppText style={styles.infoText}>Kl 12:00 Kjartan Lauritzen</AppText>
+          <AppText style={styles.infoText}>Kl 12:00 Philip Emilo</AppText>
           <AppText style={styles.infoText}>Kl 13:00 Sebastian Zalo</AppText>
           <AppText style={styles.infoText}>Kl 14:00 Iris</AppText>
 

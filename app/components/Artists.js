@@ -29,11 +29,27 @@ function Artists(props) {
         <AppText style={styles.copyRightAppText}>Universal Music AS</AppText>
         <Image
           style={styles.image}
-          source={require("../assets/PhilipEmilio.png")}
+          source={require("../assets/PhilipEmilio.jpg")}
         />
         <AppText style={styles.AppTextRight}>PHILIP EMILIO</AppText>
         <AppText style={styles.copyRightAppTextRightAkam}>
           Foto: Akam1k3
+        </AppText>
+      </View>
+      <View style={styles.container}>
+        <Image
+          style={styles.image}
+          source={require("../assets/missPunamy.jpg")}
+        />
+        <AppText style={styles.AppText}>MISS PUNANY </AppText>
+        <AppText style={styles.copyRightAppText}>Universal Music AS</AppText>
+        <Image
+          style={styles.image}
+          source={require("../assets/sebThomas.jpg")}
+        />
+        <AppText style={styles.AppTextRightSeb}>SEBASTIAN & THOMAS</AppText>
+        <AppText style={styles.copyRightAppTextRightAkam}>
+          Foto: Thea Gitmark Ugland
         </AppText>
       </View>
     </>
@@ -63,6 +79,16 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     padding: 6,
     fontSize: 17,
+    color: "#C00000",
+    bottom: 15,
+    right: 0
+  },
+  AppTextRightSeb: {
+    position: "absolute",
+    backgroundColor: "#76D0DC",
+    fontWeight: "bold",
+    padding: 6,
+    fontSize: 15,
     color: "#C00000",
     bottom: 15,
     right: 0

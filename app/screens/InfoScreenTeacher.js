@@ -13,7 +13,10 @@ import Unorderedlist from "react-native-unordered-list";
 import colors from "../config/colors";
 
 import AppText from "../components/AppText";
-import YtVismaButton from "../components/YtVismaButton";
+import VismaButton from "../components/VismaButton";
+import TeamsButton from "../components/TeamsButton";
+import ItsButton from "../components/ItsButton";
+import DivButton from "../components/DivButton";
 import FooterTeacher from "../components/FooterTeacher";
 
 function InfoScreenTeacher(props) {
@@ -26,61 +29,16 @@ function InfoScreenTeacher(props) {
           <AppText style={styles.text}>
             👇 Klikk på ikonene for å logge inn eller lese mer
           </AppText>
-          <View style={styles.imageContainer}>
-            <TouchableOpacity
-              onPress={() => {
-                Linking.openURL(
-                  "https://kvadraturen.vgs.no/for-elever/skolehverdag/visma-inschool/"
-                );
-              }}
-            >
-              <Image
-                style={styles.image}
-                source={require("../assets/teams.png")}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                Linking.openURL(
-                  "https://kvadraturen.vgs.no/for-elever/skolehverdag/visma-inschool/"
-                );
-              }}
-            >
-              <Image
-                style={styles.image}
-                source={require("../assets/visma.png")}
-              />
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              onPress={() => {
-                Linking.openURL("https://agder.itslearning.com");
-              }}
-            >
-              <Image
-                style={styles.image}
-                source={require("../assets/Itslearning.png")}
-              />
-            </TouchableOpacity>
+          <View style={styles.buttons}>
+            <VismaButton />
+            <TeamsButton />
+            <ItsButton />
+            <DivButton />
           </View>
-
-          <AppText style={styles.headlineDesc}>🎓 Visma InSchool</AppText>
           <AppText style={styles.text}>
-            Agder fylkeskommune tar i bruk Visma InSchool (VIS) som sitt
-            skoleadministrative system fra skoleåret 2021/2022.
+            Andre linker til brukerverktøy kan du finne inne på {"\n"}Teams ->
+            Kvadraturen VGS -> Filer ->{"\n"}Informasjon og Brukerveiledninger
           </AppText>
-          <AppText style={styles.headlineDesc}>
-            🤔 Hva er Visma InSchool ?
-          </AppText>
-          <AppText style={styles.text}>
-            Visma InSchool er et skoleadministrativt system som skal bidra til
-            forenkling og effektivisering av skolehverdagen for elever,
-            foresatte og skolenes medarbeidere.
-          </AppText>
-          <AppText style={styles.headlineDesc}>🎬 Introduksjonsvideo</AppText>
-
-          <YtVismaButton />
-          <AppText style={styles.headlineDesc}>Teams</AppText>
         </View>
         <FooterTeacher />
       </ScrollView>
@@ -113,6 +71,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginBottom: 10
   },
+
   image: {
     width: "100%",
     height: 100,
@@ -130,9 +89,8 @@ const styles = StyleSheet.create({
     margin: 10,
     resizeMode: "contain"
   },
-  Points: {
-    marginBottom: 10,
-    fontWeight: "500"
+  buttons: {
+    marginBottom: 40
   }
 });
 

@@ -35,12 +35,8 @@ function HelseScreen(props) {
             source={require("../assets/wordcloud1.png")}
           />
           <AppText style={styles.text}>
-            Du kan komme til oss med alt, vi er her for dere HVER DAG. Kom innom
+            Du kan komme til oss med alt, vi er her for deg HVER DAG. Kom innom
             kontoret, rom nr. B109 A og B109 B. Eller send sms!
-          </AppText>
-          <AppText style={styles.text}>
-            Du er velkommen til å ta kontakt for timebestilling på SMS eventuelt
-            Drop-in. Vi følger retningslinjene for godt smittevern.
           </AppText>
         </View>
 
@@ -115,7 +111,8 @@ function HelseScreen(props) {
             />
           </TouchableOpacity>
           <AppText>
-            Se Helsesista sine gode råd for et fint og motiverende skoleår her!
+            Se Maria Østhassel aka psyktdeg sine gode råd for et fint og
+            motiverende skoleår her!
           </AppText>
           <Image
             style={styles.Line}

@@ -31,7 +31,7 @@
     "react-native-screens": "~3.0.0",
     "react-native-timeline-flatlist": "^0.7.6",
     "react-native-unordered-list": "^1.0.4",
-    "react-native-web": "~0.13.12",
+    "react-native-web": "^0.17.1",
     "react-native-webview": "^11.6.5",
     "react-native-youtube": "^2.0.2"
   },

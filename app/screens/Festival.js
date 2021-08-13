@@ -32,10 +32,10 @@ function Festival(props) {
             2021/2022. To av våre elever, Sebastian og Thomas, skal ta dere med
             gjennom en samling av nasjonale artister for å sette standarden på
             et givende år, fullt av samhold og engasjement. Det blir konserter,
-            underholdning, sommeridyll, pizza og mange vennlige fjes som ønsker
-            deg velkommen til en ny tid på Kvadraturen. Vi kan love deg at denne
-            festivalen ikke er noe du vil gå glipp av. Vi ses fredag 20. august
-            mellom kl 12:00 og kl 15:00 i nydelige bendiksbukta!
+            underholdning, sommeridyll, digg mat og mangexe vennlige fjes som
+            ønsker deg velkommen til en ny tid på Kvadraturen. Vi kan love deg
+            at denne festivalen ikke er noe du vil gå glipp av. Vi ses fredag
+            20. august mellom kl 12:00 og kl 15:00 i nydelige bendiksbukta!
           </AppText>
 
           <View style={styles.row}>

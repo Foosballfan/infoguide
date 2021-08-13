@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kvadraturen-vgs",
+  "private_key_id": "0e505b53920cdadb77dee000b5fc78ea3ed432e8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDv9PYDorM9StEu\nlUsQAQQOyR1Rl6ugcWdk80gMBFJiMgOaENBO9OA+BBDtxvvltV83k8N+9ha+XHhP\n3vx4Le5B7dT8vplTXPczIXs+kR/9jBQQsnuMCfZzL7LCqj39HX5JfPRXtQNC1CU4\n9+J1YykSK14hz8P2cv+cCRWLMBrF5cU/444qwVLSls7pp8tatRDpjQRNIZY+/GkG\nqY+k+3Jb5FYwTwxaTAqo4nfPFs4Ji7xAs2448BYJYh+j7divuIOyV3I4dXjYO8mA\nNUryYd8fYcnJl47lZn+H8FSP4ALA6KV526SWkCO8TcfyS31UZpX6xXjsjkKQBpr1\nUsR1x5KJAgMBAAECgf9JIUEwEvXoDvySyhhhTSOqvXnwEJW1b9x55ffBY65+BkBx\noVevuTw9+y3+4Nv/e2hekpmerZQzohYeVPx30gVFWxX2juu8s7868vbYQhAk5/Dd\nqmQM2H7juUtidJWI6loB4QQgHg5pcLmzxjcoNMYLlz7PY5Zxwffx4EzxxOwJPQ+b\nrFp6Lj600IwJCsb41ZC3XdT266kVBnvp7onhjD/Gxyta1jbi6Zav5V0i8dQEz/PW\nNqD/EO5IDg/H2I05CKHrnKoZWnLN4rxze68oufGL/nMJ/1Eqsn3x7T3Fj7L0aTzf\n2+IA4gLZpGf9tfPpB+sIao6G6paCY7RfN4YG9CMCgYEA/PQ8lR3/FnPxhNNGvtqU\n0g2mBJsXeY7iawESK0bnQnBhYpPVo7F9KtBYsQIlvEhU6V0fADDjRyKOhKgsldtb\nKgy+1pv1kohev/t2WTOZgSgcWaK9ONycaZyD5s70Ewxj5H5bGP/G51dXbLw5BYfk\nQZWlbqwDYCt14ErHVUUF1Y8CgYEA8tiorVbAO498GJIUP1bpI3pmqyz8Cmnbsj6b\n4mr7iRtAB8LTvH3cjhfJB42wk3tVgPN+v/RDjI2TMZhQD3NdiNDm/SBxyHqVtfxd\n1bSxEiblrdTy47/VBIBisYnA1Nb1WsMgnRTTaDrYYvxhFoNBGoO0YOumjJ+zcgP/\nfZ2P+mcCgYBVaGHMN4SZoCw8HNoWNtdo1RLpGzSh5oysdIAd/KK43BkFn8TSsGsC\nubY4jfEP0ZxZ7wc4mUkkC5bzU5U6RAZT/FmzPJV+FG1phQ5AsBt0cIah/UDGojZt\nslsW42mlxNk1nTRFDJesJOFv5V2bcHaxbkWdSJcbMZFrWdRUBioiIQKBgDg1X61n\nU+01Q9LoFNmoQyQcE6FxMxEx+VDjXu9kNb5BWWuyc5HATAlzhetCp2krddn4AhFp\n9yyUJEqpZ3Z8DF07hQt3s/5kKTzLIejx/r4l1KmMjX+bijGVicJwEPrymi2c1nKl\nPF12qVkX81zjmnEJpPl98bnAyScNt9gaXRXnAoGBAJPKcaEPpiZ0Xv70FroNeyD7\nivdVpa8KP0Q+/kHiV4fQNWo39KPuBiCNCxx4V0mydhqSqEjIMzSizP0xW0XUOm9P\nGIlZ1XeqAt/M7lgWWrH+i9cA0cCpFxZ36UHhNCwoVMJKkcM2htrGIDRKMvuaGuyr\nHdH2y5f4+xevZPoNX0oh\n-----END PRIVATE KEY-----\n",
+  "client_email": "kvadraturen-vgs@kvadraturen-vgs.iam.gserviceaccount.com",
+  "client_id": "101283695887211481035",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kvadraturen-vgs%40kvadraturen-vgs.iam.gserviceaccount.com"
+}

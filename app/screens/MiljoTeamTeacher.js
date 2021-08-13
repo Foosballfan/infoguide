@@ -122,16 +122,6 @@ function MiljoScreenTeacher(props) {
           </AppText>
           <TouchableOpacity
             onPress={() => {
-              Linking.openURL("https://www.youtube.com/watch?v=BgPKC-mXytQ");
-            }}
-          >
-            <Image
-              style={{ width: "100%", height: 250, resizeMode: "contain" }}
-              source={require("../assets/delerutmat.jpg")}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
               Linking.openURL(
                 "https://www.youtube.com/watch?v=C97A9JVy3d4&t=13s"
               );
@@ -140,6 +130,16 @@ function MiljoScreenTeacher(props) {
             <Image
               style={{ width: "100%", height: 250, resizeMode: "contain" }}
               source={require("../assets/russen.jpg")}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL("https://www.youtube.com/watch?v=BgPKC-mXytQ");
+            }}
+          >
+            <Image
+              style={{ width: "100%", height: 250, resizeMode: "contain" }}
+              source={require("../assets/delerutmat.jpg")}
             />
           </TouchableOpacity>
         </View>

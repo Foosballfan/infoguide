@@ -70,7 +70,7 @@ export default class TeachersTimeframe extends Component {
       {
         time: "25.08",
         title: "🦺 HMS dager",
-        description: "25- 26 august. HMS dager for Ho, Tiff og elektro"
+        description: "25- 26 august. HMS dager for Ho, Tif og elektro"
       },
       {
         time: "07.09",

@@ -37,6 +37,7 @@ function Festival(props) {
             festivalen ikke er noe du vil gå glipp av. Vi ses fredag 20. august
             mellom kl 12:00 og kl 15:00 i nydelige bendiksbukta!
           </AppText>
+
           <View style={styles.row}>
             <TouchableOpacity
               onPress={() =>

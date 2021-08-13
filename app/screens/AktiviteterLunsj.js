@@ -20,8 +20,9 @@ function AktiviteterLunsj(props) {
 
           <AppText style={styles.text}>
             Miljøteamet vil stå for ulike aktiviteter i lunsjen gjennom dagene
-            som kommer. Mer info om dette kommer på skjermene som henger rundt
-            på skolen, så følg med – det blir gøy!
+            som kommer, blant annet makkerlunsj 27. aug, stands, spill, m.m. Mer
+            info om dette kommer på skjermene som henger rundt på skolen, så
+            følg med – det blir gøy!
           </AppText>
         </View>
         <Footer />

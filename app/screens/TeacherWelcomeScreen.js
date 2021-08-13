@@ -6,7 +6,7 @@ import {
   Image,
   TouchableOpacity
 } from "react-native";
-
+import * as Linking from "expo-linking";
 import FooterTeacher from "../components/FooterTeacher";
 import colors from "../config/colors";
 import AppText from "../components/AppText";
@@ -28,7 +28,22 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
           style={styles.Line}
           source={require("../assets/LineGreen.png")}
         />
-
+      </View>
+      <TouchableOpacity
+        onPress={() =>
+          Linking.openURL("https://www.youtube.com/watch?v=5O0sg1S7UYY")
+        }
+      >
+        <Image
+          style={styles.imageMap}
+          source={require("../assets/guttaYT.jpg")}
+        />
+        <AppText style={styles.infoText}>
+          🎬 To av våre elever, Thomas og Sebastian, ønsker dere hjertelig
+          velkommen til et nytt skoleår!
+        </AppText>
+      </TouchableOpacity>
+      <View style={styles.container}>
         <View style={styles.festival}>
           <ImageButton onPress={() => navigation.navigate("Festival")} />
         </View>
@@ -211,7 +226,16 @@ const styles = StyleSheet.create({
     marginHorizontal: 5
   },
   italic: { fontStyle: "italic", color: colors.primary },
-  underline: { fontSize: 28 }
+  underline: { fontSize: 28 },
+  imageMap: {
+    width: "100%",
+    height: 250,
+    resizeMode: "contain"
+  },
+  infoText: {
+    marginBottom: 0,
+    marginHorizontal: 10
+  }
 });
 
 export default TeacherwelcomeScreen;

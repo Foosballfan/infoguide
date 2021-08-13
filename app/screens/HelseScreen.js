@@ -128,7 +128,7 @@ function HelseScreen(props) {
             Hos Kvadraturen videregående skole har vi mange dyktige rådgivere,
             som også samarbeider med fylkeskommunens Pedagogisk-psykologiske
             tjeneste (PPT) og Oppfølgingstjeneste (OT). De er alle ivrige etter
-            å hjelpe deg med spørsmål om alt fra skole, videre utdanning og
+            å hjelpe deg med spørsmål om alt fra skole, videre studier og
             karriereveiledning til sosiale og personlige saker. Rådgiverne har
             taushetsplikt når det gjelder opplysninger som er privat og
             personlig. Som elev har du også gode muligheter til å få

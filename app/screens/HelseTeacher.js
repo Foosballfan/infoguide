@@ -9,17 +9,15 @@ import {
 
 import * as Linking from "expo-linking";
 
-import Unorderedlist from "react-native-unordered-list";
-
 import AppText from "../components/AppText";
 import colors from "../config/colors";
-import Footer from "../components/Footer";
 import GreteButton from "../components/GreteButton";
+import FooterTeacher from "../components/FooterTeacher";
 
-function HelseScreen(props) {
+function HelseTeacher(props) {
   return (
     <>
-      <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
+      <ScrollView style={{ backgroundColor: colors.primaryLight }}>
         <Image
           style={styles.cover}
           source={require("../assets/Helsesykepleiere.jpg")}
@@ -27,15 +25,16 @@ function HelseScreen(props) {
         <View style={styles.container}>
           <AppText style={styles.headline}>Skolehelsetjenesten</AppText>
           <AppText style={styles.text}>
-            Vi i skolehelsetjenesten kan blant annet hjelpe deg med:
+            Vi i skolehelsetjenesten kan blant annet hjelpe elevene med:
           </AppText>
           <Image
             style={styles.coverWord}
             source={require("../assets/wordcloud1.png")}
           />
           <AppText style={styles.text}>
-            Du kan komme til oss med alt, vi er her for deg HVER DAG. Kom innom
-            kontoret, rom nr. B109 A og B109 B. Eller send sms!
+            Elevene kan komme til oss med alt, vi er her for dem HVER DAG. De er
+            hjertelig velkomne til å komme innom oss på kontoret, rom nr. B109 A
+            og B109 B. Eller send sms!
           </AppText>
         </View>
 
@@ -43,7 +42,7 @@ function HelseScreen(props) {
         <View style={styles.container}>
           <Image
             style={styles.Line}
-            source={require("../assets/LineThin.png")}
+            source={require("../assets/LineGreen.png")}
           />
 
           <TouchableOpacity
@@ -66,11 +65,11 @@ function HelseScreen(props) {
           </TouchableOpacity>
           <View style={styles.container}>
             <AppText>
-              Du kan også bruke chat-tjenesten (trykk på ikonet og følg linken.
-              Deretter klikk nede i høyre hjørne av nettsiden). Den driftes av
-              Kristiansand kommune. Når du bruker tjenesten blir du satt over
+              De kan også bruke chat-tjenesten (trykk på ikonet og følg linken.
+              Deretter klikk nede i det høyre hjørnet av nettsiden). Den driftes
+              av Kristiansand kommune. Når den benyttes, blir eleven satt over
               til skolehelsetjenesten i kommunen. Åpningstider for chatten er
-              mandag til torsdag (hverdager) kl. 13-15.
+              mandag til torsdag (hverdager) kl 13-15.
             </AppText>
             <TouchableOpacity
               style={styles.Links}
@@ -115,7 +114,7 @@ function HelseScreen(props) {
           </AppText>
           <Image
             style={styles.Line}
-            source={require("../assets/LineThin.png")}
+            source={require("../assets/LineGreen.png")}
           />
           <AppText style={styles.headline}>Rådgivere</AppText>
         </View>
@@ -128,13 +127,14 @@ function HelseScreen(props) {
             Hos Kvadraturen videregående skole har vi mange dyktige rådgivere,
             som også samarbeider med fylkeskommunens Pedagogisk-psykologiske
             tjeneste (PPT) og Oppfølgingstjeneste (OT). De er alle ivrige etter
-            å hjelpe deg med spørsmål om alt fra skole, videre utdanning og
+            å hjelpe elevene med spørsmål om alt fra skole, videre studier og
             karriereveiledning til sosiale og personlige saker. Rådgiverne har
             taushetsplikt når det gjelder opplysninger som er privat og
-            personlig. Som elev har du også gode muligheter til å få
+            personlig. Som elev har man også muligheter til å få
             spesialundervisning eller samtale med minoritetsrådgiver, skulle det
-            være behov for det. Ønsker du å snakke med noen om disse emnene, så
-            kan du følge linkene for å få oversikt over rådgiverne på skolen.
+            være behov for det. Ønsker elever å snakke med noen om disse emnene,
+            så kan de/du følge lenkene for å få oversikt over rådgiverne på
+            skolen.
           </AppText>
           <TouchableOpacity
             style={styles.Links}
@@ -168,8 +168,8 @@ function HelseScreen(props) {
           </TouchableOpacity>
           <AppText>
             Mobbeombudet har taushetsplikt og er en uavhengig ressursperson for
-            deg. Saker vil ikke bli tatt opp videre uten at du er enig. Les mer
-            på fylkeskommunens hjemmeside
+            elevene. Saker vil ikke bli tatt opp videre uten at eleven er enig.
+            Les mer på fylkeskommunens hjemmeside.
           </AppText>
           <TouchableOpacity
             style={styles.Links}
@@ -182,7 +182,7 @@ function HelseScreen(props) {
             <AppText style={{ color: "blue" }}>Mobbeombud</AppText>
           </TouchableOpacity>
         </View>
-        <Footer />
+        <FooterTeacher />
       </ScrollView>
     </>
   );
@@ -240,4 +240,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default HelseScreen;
+export default HelseTeacher;

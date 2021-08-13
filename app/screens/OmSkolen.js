@@ -20,7 +20,7 @@ function OmSkolen({ navigation }) {
       <ScrollView style={{ backgroundColor: colors.secondaryLight }}>
         <YtButton />
         <AppText style={styles.headline}>
-          Om Kvadraturen{"\n"}Vidregående Skole
+          Om Kvadraturen{"\n"}Videregående skole
         </AppText>
         <Image style={styles.Line} source={require("../assets/Line.png")} />
         <View style={styles.container}>
@@ -40,9 +40,7 @@ function OmSkolen({ navigation }) {
             }}
           />
           <Image style={styles.Line} source={require("../assets/Line.png")} />
-          <AppText style={styles.headline}>
-            Kart over skolens byggninger
-          </AppText>
+          <AppText style={styles.headline}>Kart over skolens bygninger</AppText>
         </View>
         <Image style={styles.map} source={require("../assets/skolekart.png")} />
 

@@ -21,7 +21,7 @@ function KontaktScreen({ navigation }) {
         <Image style={styles.cover} source={require("../assets/kvadda3.jpg")} />
         <View style={styles.container}>
           <AppText style={styles.headline}>
-            Kvadraturen{"\n"}Vidregående Skole
+            Kvadraturen{"\n"}Videregående skole
           </AppText>
 
           <AppText style={styles.headlineText}>
@@ -59,7 +59,7 @@ function KontaktScreen({ navigation }) {
             title="rådgivere ↗️"
             onPress={() =>
               Linking.openURL(
-                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/radgivere/"
+                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/"
               )
             }
           />

@@ -23,8 +23,8 @@ function SosialeAktiviteter(props) {
             kollegaene. I tillegg til julebord, juletrefest og sommerfest, har
             vi mange forskjellige aktiviteter og sosiale tilbud til skolens
             ansatte. For eksempel: volleyball, yoga, spinning, vandretur,
-            skitur, zumba. Så når personalforeningen innkaller til møte, er det
-            lurt å delta!
+            skitur, Zumba og mye mer. Så når personalforeningen innkaller til
+            møte, er det lurt å delta!
           </AppText>
         </View>
         <FooterTeacher />

@@ -21,7 +21,7 @@ function KontaktScreenTeacher({ navigation }) {
         <Image style={styles.cover} source={require("../assets/kvadda3.jpg")} />
         <View style={styles.container}>
           <AppText style={styles.headline}>
-            Kvadraturen{"\n"}Vidregående Skole
+            Kvadraturen{"\n"}Videregående skole
           </AppText>
           <AppText style={styles.headlineText}>
             🕖 Skolens inngangsdører er åpne mellom kl. 07.00 og 14.45, mandag
@@ -58,7 +58,7 @@ function KontaktScreenTeacher({ navigation }) {
             title="rådgivere ↗️"
             onPress={() =>
               Linking.openURL(
-                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/radgivere/"
+                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/"
               )
             }
           />
@@ -73,12 +73,8 @@ function KontaktScreenTeacher({ navigation }) {
           />
           <InfoButton
             color="primary"
-            title="Skolehelsetjenesten ↗️"
-            onPress={() =>
-              Linking.openURL(
-                "https://kvadraturen.vgs.no/for-elever/hjelp-og-radgivning/skolehelsetjenesten/"
-              )
-            }
+            title="Skolehelsetjenesten"
+            onPress={() => navigation.navigate("HelseTeacher")}
           />
           <InfoButton
             color="primary"

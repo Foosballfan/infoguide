@@ -20,7 +20,7 @@ function VirituellButton({ onPress, navigation }) {
       </TouchableOpacity>
 
       <AppText style={styles.text}>
-        👋 Bli kjent på skolen via vår virutuelle digitale skole.
+        👋 Bli kjent på skolen via vår virtuelle digitale skole.
       </AppText>
     </View>
   );

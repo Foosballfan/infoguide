@@ -8,6 +8,7 @@ import KontaktScreenTeacher from "../screens/KontaktScreenTeacher";
 
 import Ledelsen from "../screens/Ledelsen";
 import MiljoScreenTeacher from "../screens/MiljoTeamTeacher";
+import HelseTeacher from "../screens/HelseTeacher";
 
 const Stack = createStackNavigator();
 
@@ -35,6 +36,22 @@ const ContactTeacherNavigator = () => (
       component={MiljoScreenTeacher}
       options={{
         title: "MILJØTEAM",
+        headerStyle: {
+          backgroundColor: colors.primary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="HelseTeacher"
+      component={HelseTeacher}
+      options={{
+        title: "HELSE",
         headerStyle: {
           backgroundColor: colors.primary
         },

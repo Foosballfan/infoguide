@@ -102,6 +102,20 @@ function TeacherwelcomeScreen({ onPress, navigation }) {
               </AppText>
             </View>
           </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("HelseTeacher")}>
+            <View style={styles.card}>
+              <Image
+                style={styles.Cardimage}
+                source={require("../assets/Helsesykepleiere.jpg")}
+              />
+
+              <AppText style={styles.title}>Elevoppfølging</AppText>
+              <AppText numberOfLines={3} style={styles.subTitle}>
+                På skolen ønsker vi å ta vare på elevene, så vi har mange
+                elevene kan kontakte hvis de trenger noen å snakke med.
+              </AppText>
+            </View>
+          </TouchableOpacity>
         </View>
       </ScrollView>
       <FooterTeacher />

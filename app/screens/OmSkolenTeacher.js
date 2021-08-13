@@ -21,7 +21,7 @@ function OmSkolenTeacher({ navigation }) {
       <ScrollView style={{ backgroundColor: colors.primaryLight }}>
         <YtButton />
         <AppText style={styles.headline}>
-          Om Kvadraturen{"\n"}Vidregående Skole
+          Om Kvadraturen{"\n"}Videregående skole
         </AppText>
         <Image
           style={styles.Line}
@@ -48,9 +48,7 @@ function OmSkolenTeacher({ navigation }) {
             style={styles.Line}
             source={require("../assets/LineGreen.png")}
           />
-          <AppText style={styles.headline}>
-            Kart over skolens byggninger
-          </AppText>
+          <AppText style={styles.headline}>Kart over skolens bygninger</AppText>
         </View>
         <Image style={styles.map} source={require("../assets/skolekart.png")} />
 

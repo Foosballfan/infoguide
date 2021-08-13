@@ -9,6 +9,7 @@ import MiljoScreenTeacher from "../screens/MiljoTeamTeacher";
 import TeachersTimeframe from "../screens/TeachersTimeframe";
 import TeachersOverView from "../screens/TeachersOverView";
 import SosialeAktiviteter from "../screens/SosialeAktiviteter";
+import HelseTeacher from "../screens/HelseTeacher";
 
 const Stack = createStackNavigator();
 
@@ -51,6 +52,22 @@ const HomeTeacherNavigator = () => (
       component={TeachersTimeframe}
       options={{
         title: "ÅRSHJUL",
+        headerStyle: {
+          backgroundColor: colors.primary
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          letterSpacing: 2
+        },
+
+        headerTintColor: colors.white
+      }}
+    />
+    <Stack.Screen
+      name="HelseTeacher"
+      component={HelseTeacher}
+      options={{
+        title: "HELSE",
         headerStyle: {
           backgroundColor: colors.primary
         },

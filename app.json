@@ -13,13 +13,12 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "kvadraturen-vgs",
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.0.0",
+      "icon": "./app/assets/logoK.png"
     },
     "android": {
       "adaptiveIcon": {

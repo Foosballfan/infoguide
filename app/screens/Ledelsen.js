@@ -17,7 +17,7 @@ function Ledelsen(props) {
         <View style={styles.row}>
           <Image
             style={styles.rowImage}
-            source={require("../assets/Morten-rektor.jpg")}
+            source={require("../assets/morten.jpg")}
           />
           <View style={styles.rowText}>
             <AppText style={styles.name}>Morten Torkelsen</AppText>

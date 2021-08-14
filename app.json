@@ -22,8 +22,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./app/assets/androidLogo.png",
+        "backgroundColor": "#24AE80"
       },
       "package": "com.tirilfjell.kvadraturenvgs"
     },

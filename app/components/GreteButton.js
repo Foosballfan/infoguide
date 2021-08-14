@@ -25,7 +25,7 @@ export default class GreteButton extends Component {
             <View style={styles.imageContainer}>
               <Image
                 style={styles.image}
-                source={require("../assets/Grete.jpg")}
+                source={require("../assets/grete.jpg")}
               />
               <Image
                 style={styles.AppTextTouch}
@@ -34,7 +34,7 @@ export default class GreteButton extends Component {
               <AppText style={styles.AppText}>Grete Seland Aasen</AppText>
               <Image
                 style={styles.image}
-                source={require("../assets/Kari.jpg")}
+                source={require("../assets/kari.jpg")}
               />
               <AppText style={styles.AppTextRight}>Kari Horrisland</AppText>
             </View>

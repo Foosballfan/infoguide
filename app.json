@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./app/assets/logoK.png",
     "splash": {
-      "image": "./app/assets/logoK.png",
+      "image": "./app/assets/adaptive-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

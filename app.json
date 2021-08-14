@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./app/assets/logoK.png",
     "splash": {
-      "image": "./app/assets/adaptive-icon.png",
+      "image": "./app/assets/Android.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/androidLogo.png",
+        "foregroundImage": "./app/assets/Android.png",
         "backgroundColor": "#24AE80"
       },
       "package": "com.tirilfjell.kvadraturenvgs"

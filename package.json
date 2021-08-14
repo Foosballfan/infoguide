@@ -31,8 +31,7 @@
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0",
     "react-native-timeline-flatlist": "^0.7.6",
-    "react-native-unordered-list": "^1.0.4",
-    "react-native-web": "^0.17.1"
+    "react-native-unordered-list": "^1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"

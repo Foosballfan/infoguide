@@ -5,7 +5,9 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"
+    "build:android": "expo build:android --release-channel production-16-08-21",
+    "build:ios": "expo build:ios --release-channel production-16-08-21",
+    "publish-production": "expo publish --release-channel production-16-08-21"
   },
   "dependencies": {
     "@expo-google-fonts/rubik": "^0.1.0",
@@ -18,11 +20,12 @@
     "expo-constants": "^10.1.3",
     "expo-font": "~9.1.0",
     "expo-linking": "~2.2.3",
+    "expo-splash-screen": "~0.10.2",
     "expo-status-bar": "~1.0.4",
+    "expo-updates": "~0.5.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.4",
-    "react-native-awesome-pin": "^1.3.2",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-keycode": "^1.1.2",
     "react-native-pin-view": "^3.0.2",
@@ -30,12 +33,8 @@
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0",
     "react-native-timeline-flatlist": "^0.7.6",
-    "react-native-unordered-list": "^1.0.4",
-    "react-native-webview": "11.2.3",
-    "react-native-youtube": "^2.0.2",
-    "expo-splash-screen": "~0.10.2",
-    "expo-updates": "~0.5.4",
     "react-native-unimodules": "~0.13.3",
+    "react-native-unordered-list": "^1.0.4",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
